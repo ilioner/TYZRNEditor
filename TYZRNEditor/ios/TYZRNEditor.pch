@@ -1,0 +1,53 @@
+//
+//  TYZRNEditor.pch
+//  TYZRNEditor
+//
+//  Created by TywinZhang on 16/1/5.
+//  Copyright © 2016年 Facebook. All rights reserved.
+//
+
+#ifndef TYZRNEditor_pch
+#define TYZRNEditor_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+
+#define LOG_LEVEL_DEF WordPressSharedLogLevel
+#import "CocoaLumberjack.h"
+
+#import "AFNetworking.h"
+#import "AFURLResponseSerialization.h"
+#import "WPImageMeta.h"
+#import "WPStyleGuide.h"
+#import "WPDeviceIdentification.h"
+#import "WPAnalytics.h"
+#import "WPFontManager.h"
+#import "WPStyleGuide.h"
+#import "WPTableViewCell.h"
+#import "UIImage+Util.h"
+#import "UIColor+Helpers.h"
+#import "WPDeviceIdentification.h"
+#import "WPDeviceIdentification.h"
+#import "WPTableViewCell.h"
+#import "NSObject+SafeExpectations.h"
+
+
+static const DDLogLevel WordPressSharedLogLevel = DDLogLevelWarning;
+
+#ifndef IS_IPAD
+#define IS_IPAD   ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#endif
+#ifndef IS_IPHONE
+#define IS_IPHONE   (!IS_IPAD)
+#endif
+#ifndef IS_RETINA
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2)
+#endif
+
+
+#endif
+#endif /* TYZRNEditor_pch */
