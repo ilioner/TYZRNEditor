@@ -130,7 +130,7 @@ WPEditorViewControllerMode;
 @property (nonatomic, copy) NSString *bodyPlaceholderText;
 
 #pragma mark - Properties: Editor View
-@property (nonatomic, strong, readonly) WPEditorView *editorView;
+@property (nonatomic, strong) WPEditorView *editorView;
 
 #pragma mark - Initializers
 

@@ -10,6 +10,7 @@
 
 @implementation TYZRNEditorView
 
+#pragma mark - instancetype
 - (instancetype)init
 {
   self = [super init];
@@ -21,27 +22,38 @@
   return self;
 }
 
-- (void)layoutSubviews
+
+#pragma mark - getter & setter
+- (NSString *)htmlContentStr
 {
-  DDLogVerbose(@"TYZRNEditorView");
-  
+  return self.contentViewController.bodyText;
 }
+
+- (NSString *)contentStr
+{
+  return self.contentViewController.bodyText;
+}
+
+- (NSString *)titleStr
+{
+  return self.contentViewController.titleText;
+}
+
+- (void)setHtmlStr:(NSString *)htmlStr
+{
+  [self.contentViewController insertHtml:htmlStr];
+}
+
+#pragma mark - public method
 
 - (void)startEditing
 {
-  dispatch_async(dispatch_get_main_queue(), ^{
     [self.contentViewController startEditing];
-  });
-  
 }
 
 - (void)stopEditing
 {
-  dispatch_async(dispatch_get_main_queue(), ^{
     [self.contentViewController stopEditing];
-    [[self.contentViewController view] endEditing:YES];
-  });
-  
 }
 
 @end

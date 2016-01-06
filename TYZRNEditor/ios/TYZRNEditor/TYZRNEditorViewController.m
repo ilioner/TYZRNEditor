@@ -52,6 +52,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)insertHtml:(NSString *)htmlStr
+{
+  [self.editorView insertHTML:htmlStr];
+}
+
 #pragma mark - WPEditorViewControllerDelegate
 
 - (void)editorDidBeginEditing:(WPEditorViewController *)editorController
@@ -289,7 +294,7 @@
   picker.navigationBar.translucent = NO;
   picker.modalPresentationStyle = UIModalPresentationCurrentContext;
   picker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:picker.sourceType];
-  [self presentViewController:picker animated:YES completion:NULL];
+  [self.navigationController presentViewController:picker animated:YES completion:NULL];
 }
 
 - (void)addImageAssetToContent:(PHAsset *)asset

@@ -91,7 +91,6 @@
 		A228DD3D1C3B9E52008FB7C8 /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = A228DD361C3B9E52008FB7C8 /* content.html */; };
 		A228DD3E1C3B9E52008FB7C8 /* WPEditorDemoLoggingConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DD381C3B9E52008FB7C8 /* WPEditorDemoLoggingConfiguration.m */; };
 		A228DD3F1C3B9E52008FB7C8 /* WPImageMetaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DD3A1C3B9E52008FB7C8 /* WPImageMetaViewController.m */; };
-		A228DD401C3B9E52008FB7C8 /* WPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DD3C1C3B9E52008FB7C8 /* WPViewController.m */; };
 		A228DDE61C3B9F2D008FB7C8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A228DD421C3B9F2D008FB7C8 /* .gitignore */; };
 		A228DDE71C3B9F2D008FB7C8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A228DD431C3B9F2D008FB7C8 /* .travis.yml */; };
 		A228DDE81C3B9F2D008FB7C8 /* editor.css in Resources */ = {isa = PBXBuildFile; fileRef = A228DD451C3B9F2D008FB7C8 /* editor.css */; };
@@ -461,8 +460,6 @@
 		A228DD381C3B9E52008FB7C8 /* WPEditorDemoLoggingConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPEditorDemoLoggingConfiguration.m; sourceTree = "<group>"; };
 		A228DD391C3B9E52008FB7C8 /* WPImageMetaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPImageMetaViewController.h; sourceTree = "<group>"; };
 		A228DD3A1C3B9E52008FB7C8 /* WPImageMetaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPImageMetaViewController.m; sourceTree = "<group>"; };
-		A228DD3B1C3B9E52008FB7C8 /* WPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPViewController.h; sourceTree = "<group>"; };
-		A228DD3C1C3B9E52008FB7C8 /* WPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPViewController.m; sourceTree = "<group>"; };
 		A228DD421C3B9F2D008FB7C8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A228DD431C3B9F2D008FB7C8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		A228DD451C3B9F2D008FB7C8 /* editor.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = editor.css; sourceTree = "<group>"; };
@@ -827,8 +824,6 @@
 				A228DD381C3B9E52008FB7C8 /* WPEditorDemoLoggingConfiguration.m */,
 				A228DD391C3B9E52008FB7C8 /* WPImageMetaViewController.h */,
 				A228DD3A1C3B9E52008FB7C8 /* WPImageMetaViewController.m */,
-				A228DD3B1C3B9E52008FB7C8 /* WPViewController.h */,
-				A228DD3C1C3B9E52008FB7C8 /* WPViewController.m */,
 				A228DC6B1C3B9D17008FB7C8 /* AFNetworking */,
 				A228DC951C3B9D17008FB7C8 /* CocoaLumberjack */,
 				A228DCB41C3B9D17008FB7C8 /* NSObject-SafeExpectations */,
@@ -1697,7 +1692,6 @@
 				A228DD051C3B9D17008FB7C8 /* UIWebView+AFNetworking.m in Sources */,
 				A228DD131C3B9D17008FB7C8 /* README.md in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				A228DD401C3B9E52008FB7C8 /* WPViewController.m in Sources */,
 				A228DD3F1C3B9E52008FB7C8 /* WPImageMetaViewController.m in Sources */,
 				A228DD0B1C3B9D17008FB7C8 /* DDTTYLogger.m in Sources */,
 				A228DD001C3B9D17008FB7C8 /* UIAlertView+AFNetworking.m in Sources */,

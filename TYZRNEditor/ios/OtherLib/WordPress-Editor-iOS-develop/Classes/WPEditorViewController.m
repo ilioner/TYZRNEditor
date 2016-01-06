@@ -38,7 +38,7 @@ NSInteger const WPLinkAlertViewTag = 92;
 @property (nonatomic, assign, readwrite) BOOL wasEditing;
 
 #pragma mark - Properties: Editor View
-@property (nonatomic, strong, readwrite) WPEditorView *editorView;
+//@property (nonatomic, strong, readwrite) WPEditorView *editorView;
 
 #pragma mark - Properties: Toolbar
 

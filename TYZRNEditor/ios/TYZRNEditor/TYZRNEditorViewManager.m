@@ -25,12 +25,20 @@ RCT_EXPORT_VIEW_PROPERTY(isEditing, BOOL);
 RCT_EXPORT_METHOD(editingAction:(BOOL)isEditing)
 {
   RCTLogInfo(@"%@",self.editorView);
-  if (isEditing == NO) {
-    [self stopEditing];
-  }else{
-    [self startEditing];
-  }
-  
+  dispatch_async(dispatch_get_main_queue(), ^{
+      if (isEditing == NO) {
+        [self stopEditing];
+      }else{
+        [self startEditing];
+      }
+  });
+}
+
+RCT_EXPORT_METHOD(findEvents:(RCTResponseSenderBlock)callback)
+{
+  dispatch_async(dispatch_get_main_queue(), ^{
+    callback(@[[NSNull null], [self getContentStr]]);
+  });
 }
 
 - (void)startEditing{
@@ -41,4 +49,8 @@ RCT_EXPORT_METHOD(editingAction:(BOOL)isEditing)
   [self.editorView stopEditing];
 }
 
+- (NSString *)getContentStr
+{
+  return self.editorView.htmlContentStr;
+}
 @end

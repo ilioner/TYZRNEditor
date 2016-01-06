@@ -15,7 +15,8 @@ var TYZEditorViewComponent = React.createClass({
 
 	getInitialState: function() {
 		return {
-			isEditing: true
+			isEditing: true,
+			contentStr: null
 		};
 	},
 
@@ -33,6 +34,21 @@ var TYZEditorViewComponent = React.createClass({
 			isEditing: flag
 		});
 		TYZRNEditorViewManager.editingAction(flag);
+	},
+
+	//获取编辑器现有内容
+	getContent: function() {
+		TYZRNEditorViewManager.findEvents((error, events) => {
+			if (error) {
+				console.error(error);
+			} else {
+				alert(events);
+				this.setState({
+
+					contentStr: events
+				});
+			}
+		});
 	}
 });
 

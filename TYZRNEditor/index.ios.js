@@ -10,6 +10,7 @@ var {
   StyleSheet,
   Text,
   View,
+  Navigator
 } = React;
 
 var TYZEditorViewComponent = require('./app/TYZEditorViewComponent');
@@ -23,7 +24,7 @@ var TYZRNEditor = React.createClass({
     };
   },
 
-  clickRightButton: function() {
+  clickLeftButton: function() {
 
     if (this.state.isEditing) {
       this.setState({
@@ -42,17 +43,26 @@ var TYZRNEditor = React.createClass({
     console.log(this.state.isEditing);
   },
 
+  clickRightButton: function() {
+    TYZEditorViewComponent.mainContent.getContent();
+  },
 
 
   render: function() {
-    const rightButtonConfig = {
+    const leftButtonConfig = {
       title: this.state.editingButtonTitle,
+      handler: () => this.clickLeftButton(),
+      tintColor: '#FFF8FD'
+    };
+
+    const rightButtonConfig = {
+      title: '查看内容',
       handler: () => this.clickRightButton(),
       tintColor: '#FFF8FD'
     };
 
     const titleConfig = {
-      title: 'Hello, world',
+      title: '编辑器',
       tintColor: '#FFF8FD'
     };
 
@@ -60,6 +70,7 @@ var TYZRNEditor = React.createClass({
       <View style={{ flex: 1, }}>
       <NavigationBar
         title={titleConfig}
+        leftButton={leftButtonConfig} 
         rightButton={rightButtonConfig} 
         tintColor = {'#FF6124'}/>
         <TYZEditorViewComponent/>
