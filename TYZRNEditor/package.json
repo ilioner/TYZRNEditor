@@ -6,6 +6,9 @@
     "start": "react-native start"
   },
   "dependencies": {
-    "react-native": "^0.17.0"
+    "react-native": "^0.17.0",
+    "react-native-navbar": "^1.1.5",
+    "react-native-navigator": "^0.4.2",
+    "react-native-rj-navigator": "^0.1.5"
   }
 }

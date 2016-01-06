@@ -12,13 +12,58 @@ var {
   View,
 } = React;
 
-var TYZRNEditorView = require('./app/component/TYZRNEditorView')
-
+var TYZEditorViewComponent = require('./app/TYZEditorViewComponent');
+var NavigationBar = require('react-native-navbar');
 var TYZRNEditor = React.createClass({
+
+  getInitialState: function() {
+    return {
+      editingButtonTitle: '编辑',
+      isEditing: false
+    };
+  },
+
+  clickRightButton: function() {
+
+    if (this.state.isEditing) {
+      this.setState({
+        editingButtonTitle: '编辑',
+        isEditing: false
+      });
+      TYZEditorViewComponent.mainContent.editingAction(false);
+    } else {
+
+      this.setState({
+        editingButtonTitle: '取消',
+        isEditing: true
+      });
+      TYZEditorViewComponent.mainContent.editingAction(true);
+    }
+    console.log(this.state.isEditing);
+  },
+
+
+
   render: function() {
+    const rightButtonConfig = {
+      title: this.state.editingButtonTitle,
+      handler: () => this.clickRightButton(),
+      tintColor: '#FFF8FD'
+    };
+
+    const titleConfig = {
+      title: 'Hello, world',
+      tintColor: '#FFF8FD'
+    };
+
     return (
-      <TYZRNEditorView style={styles.container}>
-      </TYZRNEditorView>
+      <View style={{ flex: 1, }}>
+      <NavigationBar
+        title={titleConfig}
+        rightButton={rightButtonConfig} 
+        tintColor = {'#FF6124'}/>
+        <TYZEditorViewComponent/>
+    </View>
     );
   }
 });
@@ -26,20 +71,8 @@ var TYZRNEditor = React.createClass({
 var styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  }
 });
 
 AppRegistry.registerComponent('TYZRNEditor', () => TYZRNEditor);

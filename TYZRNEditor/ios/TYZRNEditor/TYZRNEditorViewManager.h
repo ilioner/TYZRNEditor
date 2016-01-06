@@ -7,7 +7,10 @@
 //
 
 #import "RCTViewManager.h"
+#import "TYZRNEditorView.h"
 
-@interface TYZRNEditorViewManager : RCTViewManager
+@interface TYZRNEditorViewManager : RCTViewManager<RCTBridgeModule>
+
+@property (nonatomic, strong) TYZRNEditorView *editorView;
 
 @end

@@ -230,6 +230,7 @@
 		A228DE6D1C3B9F2D008FB7C8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A228DDE51C3B9F2D008FB7C8 /* README.md */; };
 		A228DE701C3BA098008FB7C8 /* TYZRNEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DE6F1C3BA098008FB7C8 /* TYZRNEditorView.m */; };
 		A228DE731C3BA236008FB7C8 /* TYZRNEditorViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DE721C3BA236008FB7C8 /* TYZRNEditorViewManager.m */; };
+		A228DE8A1C3BB008008FB7C8 /* TYZRNEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DE891C3BB008008FB7C8 /* TYZRNEditorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -628,6 +629,8 @@
 		A228DE6F1C3BA098008FB7C8 /* TYZRNEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZRNEditorView.m; path = TYZRNEditor/TYZRNEditorView.m; sourceTree = "<group>"; };
 		A228DE711C3BA236008FB7C8 /* TYZRNEditorViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYZRNEditorViewManager.h; path = TYZRNEditor/TYZRNEditorViewManager.h; sourceTree = "<group>"; };
 		A228DE721C3BA236008FB7C8 /* TYZRNEditorViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZRNEditorViewManager.m; path = TYZRNEditor/TYZRNEditorViewManager.m; sourceTree = "<group>"; };
+		A228DE881C3BB008008FB7C8 /* TYZRNEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYZRNEditorViewController.h; path = TYZRNEditor/TYZRNEditorViewController.h; sourceTree = "<group>"; };
+		A228DE891C3BB008008FB7C8 /* TYZRNEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZRNEditorViewController.m; path = TYZRNEditor/TYZRNEditorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -747,6 +750,8 @@
 				A228DE6F1C3BA098008FB7C8 /* TYZRNEditorView.m */,
 				A228DE711C3BA236008FB7C8 /* TYZRNEditorViewManager.h */,
 				A228DE721C3BA236008FB7C8 /* TYZRNEditorViewManager.m */,
+				A228DE881C3BB008008FB7C8 /* TYZRNEditorViewController.h */,
+				A228DE891C3BB008008FB7C8 /* TYZRNEditorViewController.m */,
 			);
 			name = TYZRNEditor;
 			sourceTree = "<group>";
@@ -1632,6 +1637,7 @@
 				A228DE5C1C3B9F2D008FB7C8 /* HRColorPickerViewController.m in Sources */,
 				A228DE701C3BA098008FB7C8 /* TYZRNEditorView.m in Sources */,
 				A228DE541C3B9F2D008FB7C8 /* CYRLayoutManager.m in Sources */,
+				A228DE8A1C3BB008008FB7C8 /* TYZRNEditorViewController.m in Sources */,
 				A228DE551C3B9F2D008FB7C8 /* CYRTextStorage.m in Sources */,
 				A228DD271C3B9D17008FB7C8 /* UIImage+Util.m in Sources */,
 				A228DD071C3B9D17008FB7C8 /* DDASLLogCapture.m in Sources */,
