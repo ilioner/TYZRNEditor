@@ -20,8 +20,6 @@ RCT_EXPORT_MODULE()
   return self.editorView;
 }
 
-RCT_EXPORT_VIEW_PROPERTY(isEditing, BOOL);
-
 RCT_EXPORT_METHOD(editingAction:(BOOL)isEditing)
 {
   RCTLogInfo(@"%@",self.editorView);
@@ -41,6 +39,13 @@ RCT_EXPORT_METHOD(findEvents:(RCTResponseSenderBlock)callback)
   });
 }
 
+RCT_EXPORT_METHOD(insertHTML:(NSString *)html)
+{
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [self insertNewHTML:html];
+  });
+}
+
 - (void)startEditing{
   [self.editorView startEditing];
 }
@@ -52,5 +57,10 @@ RCT_EXPORT_METHOD(findEvents:(RCTResponseSenderBlock)callback)
 - (NSString *)getContentStr
 {
   return self.editorView.htmlContentStr;
+}
+
+- (void)insertNewHTML:(NSString *)html
+{
+  [self.editorView insertHTML:html];
 }
 @end

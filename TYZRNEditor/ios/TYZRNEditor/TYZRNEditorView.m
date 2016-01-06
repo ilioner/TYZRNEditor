@@ -39,7 +39,7 @@
   return self.contentViewController.titleText;
 }
 
-- (void)setHtmlStr:(NSString *)htmlStr
+- (void)insertHTML:(NSString *)htmlStr
 {
   [self.contentViewController insertHtml:htmlStr];
 }

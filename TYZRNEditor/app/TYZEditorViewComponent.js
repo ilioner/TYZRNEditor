@@ -24,7 +24,7 @@ var TYZEditorViewComponent = React.createClass({
 		//讲当前类映射为TYZEditorViewComponent.mainContent
 		TYZEditorViewComponent.mainContent = this;
 		return (
-			<TYZRNEditorView style={styles.contentStyle} isEditing={this.state.isEditing} ref='EditorView'/>
+			<TYZRNEditorView style={styles.contentStyle} ref='EditorView'/>
 		);
 	},
 
@@ -43,10 +43,13 @@ var TYZEditorViewComponent = React.createClass({
 				console.error(error);
 			} else {
 				alert(events);
+				console.log(events);
 				this.setState({
-
 					contentStr: events
 				});
+				//改变编辑器内容
+				var cont = "I'm a test post.<strong>Bold text</strong><em>Italic text</em><a href=\"http://www.wordpress.com\" > I 'm a link!</a>";
+				TYZRNEditorViewManager.insertHTML(cont);
 			}
 		});
 	}

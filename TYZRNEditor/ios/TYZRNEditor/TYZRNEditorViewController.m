@@ -54,7 +54,7 @@
 
 - (void)insertHtml:(NSString *)htmlStr
 {
-  [self.editorView insertHTML:htmlStr];
+  [self setBodyText:htmlStr];
 }
 
 #pragma mark - WPEditorViewControllerDelegate

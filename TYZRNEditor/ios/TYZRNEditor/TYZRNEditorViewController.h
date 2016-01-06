@@ -11,5 +11,4 @@
 @interface TYZRNEditorViewController : WPEditorViewController <WPEditorViewControllerDelegate>
 
 - (void)insertHtml:(NSString *)htmlStr;
-- (void)hiddenAllKeyboard;
 @end

@@ -21,7 +21,7 @@
 
 @property (nonatomic, strong) TYZRNEditorViewController *contentViewController;
 
-@property (nonatomic, strong) NSString *htmlStr;
 - (void)stopEditing;
 - (void)startEditing;
+- (void)insertHTML:(NSString *)htmlStr;
 @end
