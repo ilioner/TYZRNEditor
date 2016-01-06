@@ -11,8 +11,21 @@
     "react-native-navigator": "^0.4.2",
     "react-native-rj-navigator": "^0.1.5"
   },
+  "main": "index.ios.js",
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/ilioner/TYZRNEditor.git"
+    "url": "git+https://github.com/ilioner/TYZRNEditor.git"
   },
+  "keywords": [
+    "React-Native",
+    "Editor"
+  ],
+  "author": "TywinZhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilioner/TYZRNEditor/issues"
+  },
+  "homepage": "https://github.com/ilioner/TYZRNEditor#readme",
+  "description": ""
 }
