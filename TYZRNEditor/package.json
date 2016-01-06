@@ -10,5 +10,9 @@
     "react-native-navbar": "^1.1.5",
     "react-native-navigator": "^0.4.2",
     "react-native-rj-navigator": "^0.1.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilioner/TYZRNEditor.git"
+  },
 }
