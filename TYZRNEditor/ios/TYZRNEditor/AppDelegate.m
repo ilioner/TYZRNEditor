@@ -11,6 +11,9 @@
 
 #import "RCTRootView.h"
 
+#import "TYZRNEditorView.h"
+#import "TYZRNEditorViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -18,6 +21,12 @@
   
   [DDLog addLogger:[DDASLLogger sharedInstance]];
   [DDLog addLogger:[DDTTYLogger sharedInstance]];
+  
+  DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+  fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+  fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+  [DDLog addLogger:fileLogger];
+  
   NSURL *jsCodeLocation;
 
   /**
@@ -48,6 +57,8 @@
                                                       moduleName:@"TYZRNEditor"
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
+  
+  TYZRNEditorView *rnView = [[TYZRNEditorView alloc] init];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];

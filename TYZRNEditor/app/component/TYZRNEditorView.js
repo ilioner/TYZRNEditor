@@ -5,8 +5,26 @@ var {
 
 
 class TYZRNEditorView extends React.Component {
+
+
+	_onChange(event: Event) {
+		if (!this.props.contentStr || !this.props.titleStr) {
+			return;
+		}
+		debugger;
+		console.log(event);
+		this.setProps({
+			contentStr: React.PropTypes.string,
+			titleStr: React.PropTypes.string
+		});
+
+	}
+
 	render() {
 		return ( < RCTMyEditorView {...this.props
+			}
+			onChange = {
+				this._onChange
 			}
 			/>
 		);
@@ -15,7 +33,8 @@ class TYZRNEditorView extends React.Component {
 
 
 TYZRNEditorView.propTypes = {
-	isEditing: React.PropTypes.bool,
+	contentStr: React.PropTypes.string,
+	titleStr: React.PropTypes.string
 };
 
 

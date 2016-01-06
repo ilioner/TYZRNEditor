@@ -163,7 +163,7 @@
   controller.imageMeta = imageMeta;
   controller.delegate = self;
   UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-  [self.navigationController presentViewController:navController animated:YES completion:nil];
+  [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)showPromptForImageWithID:(NSString *)imageId
@@ -294,7 +294,7 @@
   picker.navigationBar.translucent = NO;
   picker.modalPresentationStyle = UIModalPresentationCurrentContext;
   picker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:picker.sourceType];
-  [self.navigationController presentViewController:picker animated:YES completion:NULL];
+  [self presentViewController:picker animated:YES completion:NULL];
 }
 
 - (void)addImageAssetToContent:(PHAsset *)asset
@@ -446,7 +446,8 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-  [self dismissViewControllerAnimated:YES completion:^{
+  
+  [picker dismissViewControllerAnimated:YES completion:^{
     NSURL *assetURL = info[UIImagePickerControllerReferenceURL];
     [self addAssetToContent:assetURL];
   }];

@@ -8,20 +8,39 @@
 
 #import <UIKit/UIKit.h>
 #import "TYZRNEditorViewController.h"
-
+@protocol TYZRNEditorViewDelegate;
 @interface TYZRNEditorView : UIView
 
-@property (nonatomic, assign) BOOL isEditing;
+@property (nonatomic, weak) id<TYZRNEditorViewDelegate> delegate;
 
-@property (nonatomic, strong) NSString *htmlContentStr;
+@property (nonatomic, assign) BOOL                      isEditing;
 
-@property (nonatomic, strong) NSString *contentStr;
+@property (nonatomic, strong) NSString                  *htmlContentStr;
 
-@property (nonatomic, strong) NSString *titleStr;
+@property (nonatomic, strong) NSString                  *contentStr;
+
+@property (nonatomic, strong) NSString                  *titleStr;
 
 @property (nonatomic, strong) TYZRNEditorViewController *contentViewController;
+
+@property (nonatomic, strong) UIView                    *navBarView;
+
+@property (nonatomic, strong) UIButton                  *leftButton;
+
+@property (nonatomic, strong) UIButton                  *rightButton;
+
+@property (nonatomic, strong) NSString                  *titleLabelStr;
+
+@property (nonatomic, strong) UILabel                   *titleLabel;
 
 - (void)stopEditing;
 - (void)startEditing;
 - (void)insertHTML:(NSString *)htmlStr;
+@end
+
+
+@protocol TYZRNEditorViewDelegate <NSObject>
+
+- (void)editorView:(TYZRNEditorView *)editorView title:(NSString *)title content:(NSString *)content;
+
 @end
