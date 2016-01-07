@@ -1,44 +1,67 @@
 var React = require('react-native');
+var PropTypes = require('ReactPropTypes');
 var {
 	requireNativeComponent
 } = React;
 
+var TYZRNEditorViewManager = React.NativeModules.TYZRNEditorViewManager;
 
-class TYZRNEditorView extends React.Component {
+var TYZRNEditorView = React.createClass({
 
+	propTypes: {
+		contentStr: PropTypes.string,
+		titleStr: PropTypes.string,
+	},
 
-	_onChange(event: Event) {
-		if (!this.props.contentStr || !this.props.titleStr) {
-			return;
-		}
-		debugger;
-		console.log(event);
-		this.setProps({
-			contentStr: React.PropTypes.string,
-			titleStr: React.PropTypes.string
-		});
+	getInitialState: function() {
+		return {
+			contentStr: this.props.contentStr,
+			titleStr: this.props.string
+		};
+	},
 
-	}
-
-	render() {
-		return ( < RCTMyEditorView {...this.props
+	//获取编辑器内容
+	getContentString: function() {
+		TYZRNEditorViewManager.getContentStrMethod((error, events) => {
+			debugger;
+			if (error) {
+				console.error(error);
+				return null;
+			} else {
+				console.log(events);
+				this.setState({
+					contentStr: events
+				});
+				return events;
 			}
-			onChange = {
-				this._onChange
+		});
+	},
+	//获取编辑器内容题目
+	getTitleString: function() {
+		TYZRNEditorViewManager.getTitleStrMethod((error, events) => {
+			debugger;
+			if (error) {
+				console.error(error);
+				return null;
+			} else {
+				console.log(events);
+				this.setState({
+					titleStr: events
+				});
+				return events;
+			}
+		});
+	},
+
+	render: function() {
+		TYZRNEditorView.context = this;
+		return ( < RCTMyEditorView {...this.props
 			}
 			/>
 		);
 	}
-}
+});
 
-
-TYZRNEditorView.propTypes = {
-	contentStr: React.PropTypes.string,
-	titleStr: React.PropTypes.string
-};
-
-
-// requireNativeComponent 自动把这个组件提供给 "TYZRNEditorViewManager"
 
 var RCTMyEditorView = requireNativeComponent('TYZRNEditorView', TYZRNEditorView);
 

@@ -7,6 +7,7 @@
 //
 
 #import "TYZRNEditorViewManager.h"
+#import "RCTBridge.h"
 
 @implementation TYZRNEditorViewManager
 
@@ -36,10 +37,17 @@ RCT_EXPORT_METHOD(editingAction:(BOOL)isEditing)
   });
 }
 
-RCT_EXPORT_METHOD(findEvents:(RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(getContentStrMethod:(RCTResponseSenderBlock)callback)
 {
   dispatch_async(dispatch_get_main_queue(), ^{
     callback(@[[NSNull null], [self getContentStr]]);
+  });
+}
+
+RCT_EXPORT_METHOD(getTitleStrMethod:(RCTResponseSenderBlock)callback)
+{
+  dispatch_async(dispatch_get_main_queue(), ^{
+    callback(@[[NSNull null], [self getTitleStr]]);
   });
 }
 
@@ -72,7 +80,14 @@ RCT_EXPORT_METHOD(insertHTML:(NSString *)html)
 
 - (NSString *)getContentStr
 {
+  RCTLogInfo(@"%@",self.editorView.htmlContentStr);
   return self.editorView.htmlContentStr;
+}
+
+- (NSString *)getTitleStr
+{
+  RCTLogInfo(@"%@",self.editorView.titleStr);
+  return self.editorView.titleStr;
 }
 
 - (void)insertNewHTML:(NSString *)html

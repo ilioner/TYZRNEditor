@@ -6,6 +6,8 @@ var React = require('react-native');
 var {
 	StyleSheet,
 	View,
+	Text,
+	TouchableOpacity
 } = React;
 
 var TYZRNEditorView = require('./component/TYZRNEditorView');
@@ -24,16 +26,19 @@ var TYZEditorViewComponent = React.createClass({
 		//讲当前类映射为TYZEditorViewComponent.mainContent
 		TYZEditorViewComponent.mainContent = this;
 		return (
-			<TYZRNEditorView style={styles.contentStyle} ref='EditorView'/>
+
+			<TYZRNEditorView style={styles.contentStyle} 
+							ref='EditorView' 
+							onRightButtonClicked={this.clickAction} 
+							contentStr = '哈哈哈哈'
+							/>
 		);
 	},
 
-	editingAction: function(flag) {
-
-		this.setState({
-			isEditing: flag
-		});
-		TYZRNEditorViewManager.editingAction(flag);
+	editingAction: function() {
+		console.log(this.refs.EditorView.state);
+		console.log(TYZRNEditorView.context.getContentString());
+		console.log(TYZRNEditorView.context.getTitleString());
 	},
 
 	//获取编辑器现有内容

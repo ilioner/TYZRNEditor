@@ -49,6 +49,8 @@
     
     [self addSubview:self.navBarView];
     
+    self.rightButton.hidden = YES;
+    
     self.isEditing = NO;
    
   }
@@ -71,6 +73,11 @@
 - (NSString *)titleStr
 {
   return self.contentViewController.titleText;
+}
+
+- (void)setContentStr:(NSString *)contentStr
+{
+  self.contentViewController.bodyText = contentStr;
 }
 
 - (void)setTitleLabelStr:(NSString *)titleLabelStr
