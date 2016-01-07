@@ -230,6 +230,47 @@
 		A228DE701C3BA098008FB7C8 /* TYZRNEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DE6F1C3BA098008FB7C8 /* TYZRNEditorView.m */; };
 		A228DE731C3BA236008FB7C8 /* TYZRNEditorViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DE721C3BA236008FB7C8 /* TYZRNEditorViewManager.m */; };
 		A228DE8A1C3BB008008FB7C8 /* TYZRNEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A228DE891C3BB008008FB7C8 /* TYZRNEditorViewController.m */; };
+		A24EB82A1C3E5B3300888331 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB81A1C3E5B3300888331 /* MMDocument.m */; };
+		A24EB82B1C3E5B3300888331 /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB81D1C3E5B3300888331 /* MMElement.m */; };
+		A24EB82C1C3E5B3300888331 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB81F1C3E5B3300888331 /* MMGenerator.m */; };
+		A24EB82D1C3E5B3300888331 /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8211C3E5B3300888331 /* MMHTMLParser.m */; };
+		A24EB82E1C3E5B3300888331 /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8231C3E5B3300888331 /* MMMarkdown.m */; };
+		A24EB82F1C3E5B3300888331 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8251C3E5B3300888331 /* MMParser.m */; };
+		A24EB8301C3E5B3300888331 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8271C3E5B3300888331 /* MMScanner.m */; };
+		A24EB8311C3E5B3300888331 /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8291C3E5B3300888331 /* MMSpanParser.m */; };
+		A24EB8451C3E5B8600888331 /* bold.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB8351C3E5B8600888331 /* bold.png */; };
+		A24EB8461C3E5B8600888331 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB8361C3E5B8600888331 /* code.png */; };
+		A24EB8471C3E5B8600888331 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB8371C3E5B8600888331 /* help.png */; };
+		A24EB8481C3E5B8600888331 /* hr.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB8381C3E5B8600888331 /* hr.png */; };
+		A24EB8491C3E5B8600888331 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB8391C3E5B8600888331 /* img.png */; };
+		A24EB84A1C3E5B8600888331 /* italic.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB83A1C3E5B8600888331 /* italic.png */; };
+		A24EB84B1C3E5B8600888331 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB83B1C3E5B8600888331 /* link.png */; };
+		A24EB84C1C3E5B8600888331 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB83C1C3E5B8600888331 /* more.png */; };
+		A24EB84D1C3E5B8600888331 /* ol.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB83D1C3E5B8600888331 /* ol.png */; };
+		A24EB84E1C3E5B8600888331 /* quote.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB83E1C3E5B8600888331 /* quote.png */; };
+		A24EB84F1C3E5B8600888331 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB83F1C3E5B8600888331 /* title.png */; };
+		A24EB8501C3E5B8600888331 /* ul.png in Resources */ = {isa = PBXBuildFile; fileRef = A24EB8401C3E5B8600888331 /* ul.png */; };
+		A24EB8511C3E5B8600888331 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = A24EB8421C3E5B8600888331 /* markdown.css */; };
+		A24EB8521C3E5B8600888331 /* markdown.html in Resources */ = {isa = PBXBuildFile; fileRef = A24EB8431C3E5B8600888331 /* markdown.html */; };
+		A24EB8531C3E5B8600888331 /* syntax.md in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8441C3E5B8600888331 /* syntax.md */; };
+		A24EB8601C3E5E2400888331 /* TYZRNMKEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB85F1C3E5E2400888331 /* TYZRNMKEditor.m */; };
+		A24EB88B1C3E5EB900888331 /* MKHighlighterTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB86C1C3E5EB900888331 /* MKHighlighterTextStorage.m */; };
+		A24EB88C1C3E5EB900888331 /* MKHighlighterType.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB86E1C3E5EB900888331 /* MKHighlighterType.m */; };
+		A24EB88D1C3E5EB900888331 /* MKKeyboardToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8701C3E5EB900888331 /* MKKeyboardToolBar.m */; };
+		A24EB88E1C3E5EB900888331 /* MKMarkdownCodeBlockHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8721C3E5EB900888331 /* MKMarkdownCodeBlockHighlighter.m */; };
+		A24EB88F1C3E5EB900888331 /* MKMarkdownController.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8741C3E5EB900888331 /* MKMarkdownController.m */; };
+		A24EB8901C3E5EB900888331 /* MKMarkdownHeaderHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8761C3E5EB900888331 /* MKMarkdownHeaderHighlighter.m */; };
+		A24EB8911C3E5EB900888331 /* MKMarkdownInlineBlockHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8781C3E5EB900888331 /* MKMarkdownInlineBlockHighlighter.m */; };
+		A24EB8921C3E5EB900888331 /* MKMarkdownItalicHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB87A1C3E5EB900888331 /* MKMarkdownItalicHighlighter.m */; };
+		A24EB8931C3E5EB900888331 /* MKMarkdownLinkHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB87C1C3E5EB900888331 /* MKMarkdownLinkHighlighter.m */; };
+		A24EB8941C3E5EB900888331 /* MKMarkdownListHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB87E1C3E5EB900888331 /* MKMarkdownListHighlighter.m */; };
+		A24EB8951C3E5EB900888331 /* MKMarkdownOrderListHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8801C3E5EB900888331 /* MKMarkdownOrderListHighlighter.m */; };
+		A24EB8961C3E5EB900888331 /* MKMarkdownStrikethroughHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8821C3E5EB900888331 /* MKMarkdownStrikethroughHighlighter.m */; };
+		A24EB8971C3E5EB900888331 /* MKMarkdownStrongBlockHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8841C3E5EB900888331 /* MKMarkdownStrongBlockHighlighter.m */; };
+		A24EB8981C3E5EB900888331 /* MKPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8861C3E5EB900888331 /* MKPreviewController.m */; };
+		A24EB8991C3E5EB900888331 /* MKRegularExpressionHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8881C3E5EB900888331 /* MKRegularExpressionHighlighter.m */; };
+		A24EB89A1C3E5EB900888331 /* MKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB88A1C3E5EB900888331 /* MKTextView.m */; };
+		A24EB89D1C3E613E00888331 /* TYZENMKPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB89C1C3E613E00888331 /* TYZENMKPreView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -628,6 +669,74 @@
 		A228DE721C3BA236008FB7C8 /* TYZRNEditorViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZRNEditorViewManager.m; path = TYZRNEditor/TYZRNEditorViewManager.m; sourceTree = "<group>"; };
 		A228DE881C3BB008008FB7C8 /* TYZRNEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYZRNEditorViewController.h; path = TYZRNEditor/TYZRNEditorViewController.h; sourceTree = "<group>"; };
 		A228DE891C3BB008008FB7C8 /* TYZRNEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZRNEditorViewController.m; path = TYZRNEditor/TYZRNEditorViewController.m; sourceTree = "<group>"; };
+		A24EB8191C3E5B3300888331 /* MMDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDocument.h; sourceTree = "<group>"; };
+		A24EB81A1C3E5B3300888331 /* MMDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDocument.m; sourceTree = "<group>"; };
+		A24EB81B1C3E5B3300888331 /* MMDocument_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDocument_Private.h; sourceTree = "<group>"; };
+		A24EB81C1C3E5B3300888331 /* MMElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMElement.h; sourceTree = "<group>"; };
+		A24EB81D1C3E5B3300888331 /* MMElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMElement.m; sourceTree = "<group>"; };
+		A24EB81E1C3E5B3300888331 /* MMGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGenerator.h; sourceTree = "<group>"; };
+		A24EB81F1C3E5B3300888331 /* MMGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGenerator.m; sourceTree = "<group>"; };
+		A24EB8201C3E5B3300888331 /* MMHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHTMLParser.h; sourceTree = "<group>"; };
+		A24EB8211C3E5B3300888331 /* MMHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHTMLParser.m; sourceTree = "<group>"; };
+		A24EB8221C3E5B3300888331 /* MMMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMarkdown.h; sourceTree = "<group>"; };
+		A24EB8231C3E5B3300888331 /* MMMarkdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMarkdown.m; sourceTree = "<group>"; };
+		A24EB8241C3E5B3300888331 /* MMParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMParser.h; sourceTree = "<group>"; };
+		A24EB8251C3E5B3300888331 /* MMParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMParser.m; sourceTree = "<group>"; };
+		A24EB8261C3E5B3300888331 /* MMScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScanner.h; sourceTree = "<group>"; };
+		A24EB8271C3E5B3300888331 /* MMScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScanner.m; sourceTree = "<group>"; };
+		A24EB8281C3E5B3300888331 /* MMSpanParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpanParser.h; sourceTree = "<group>"; };
+		A24EB8291C3E5B3300888331 /* MMSpanParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpanParser.m; sourceTree = "<group>"; };
+		A24EB8351C3E5B8600888331 /* bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bold.png; sourceTree = "<group>"; };
+		A24EB8361C3E5B8600888331 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		A24EB8371C3E5B8600888331 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		A24EB8381C3E5B8600888331 /* hr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hr.png; sourceTree = "<group>"; };
+		A24EB8391C3E5B8600888331 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
+		A24EB83A1C3E5B8600888331 /* italic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = italic.png; sourceTree = "<group>"; };
+		A24EB83B1C3E5B8600888331 /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = link.png; sourceTree = "<group>"; };
+		A24EB83C1C3E5B8600888331 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		A24EB83D1C3E5B8600888331 /* ol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ol.png; sourceTree = "<group>"; };
+		A24EB83E1C3E5B8600888331 /* quote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quote.png; sourceTree = "<group>"; };
+		A24EB83F1C3E5B8600888331 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		A24EB8401C3E5B8600888331 /* ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ul.png; sourceTree = "<group>"; };
+		A24EB8421C3E5B8600888331 /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
+		A24EB8431C3E5B8600888331 /* markdown.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = markdown.html; sourceTree = "<group>"; };
+		A24EB8441C3E5B8600888331 /* syntax.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = syntax.md; sourceTree = "<group>"; };
+		A24EB85E1C3E5E2400888331 /* TYZRNMKEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYZRNMKEditor.h; path = TYZRNEditor/TYZRNMKEditor.h; sourceTree = "<group>"; };
+		A24EB85F1C3E5E2400888331 /* TYZRNMKEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZRNMKEditor.m; path = TYZRNEditor/TYZRNMKEditor.m; sourceTree = "<group>"; };
+		A24EB86B1C3E5EB900888331 /* MKHighlighterTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHighlighterTextStorage.h; sourceTree = "<group>"; };
+		A24EB86C1C3E5EB900888331 /* MKHighlighterTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHighlighterTextStorage.m; sourceTree = "<group>"; };
+		A24EB86D1C3E5EB900888331 /* MKHighlighterType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHighlighterType.h; sourceTree = "<group>"; };
+		A24EB86E1C3E5EB900888331 /* MKHighlighterType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHighlighterType.m; sourceTree = "<group>"; };
+		A24EB86F1C3E5EB900888331 /* MKKeyboardToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKKeyboardToolBar.h; sourceTree = "<group>"; };
+		A24EB8701C3E5EB900888331 /* MKKeyboardToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKKeyboardToolBar.m; sourceTree = "<group>"; };
+		A24EB8711C3E5EB900888331 /* MKMarkdownCodeBlockHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownCodeBlockHighlighter.h; sourceTree = "<group>"; };
+		A24EB8721C3E5EB900888331 /* MKMarkdownCodeBlockHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownCodeBlockHighlighter.m; sourceTree = "<group>"; };
+		A24EB8731C3E5EB900888331 /* MKMarkdownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownController.h; sourceTree = "<group>"; };
+		A24EB8741C3E5EB900888331 /* MKMarkdownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownController.m; sourceTree = "<group>"; };
+		A24EB8751C3E5EB900888331 /* MKMarkdownHeaderHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownHeaderHighlighter.h; sourceTree = "<group>"; };
+		A24EB8761C3E5EB900888331 /* MKMarkdownHeaderHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownHeaderHighlighter.m; sourceTree = "<group>"; };
+		A24EB8771C3E5EB900888331 /* MKMarkdownInlineBlockHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownInlineBlockHighlighter.h; sourceTree = "<group>"; };
+		A24EB8781C3E5EB900888331 /* MKMarkdownInlineBlockHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownInlineBlockHighlighter.m; sourceTree = "<group>"; };
+		A24EB8791C3E5EB900888331 /* MKMarkdownItalicHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownItalicHighlighter.h; sourceTree = "<group>"; };
+		A24EB87A1C3E5EB900888331 /* MKMarkdownItalicHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownItalicHighlighter.m; sourceTree = "<group>"; };
+		A24EB87B1C3E5EB900888331 /* MKMarkdownLinkHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownLinkHighlighter.h; sourceTree = "<group>"; };
+		A24EB87C1C3E5EB900888331 /* MKMarkdownLinkHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownLinkHighlighter.m; sourceTree = "<group>"; };
+		A24EB87D1C3E5EB900888331 /* MKMarkdownListHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownListHighlighter.h; sourceTree = "<group>"; };
+		A24EB87E1C3E5EB900888331 /* MKMarkdownListHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownListHighlighter.m; sourceTree = "<group>"; };
+		A24EB87F1C3E5EB900888331 /* MKMarkdownOrderListHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownOrderListHighlighter.h; sourceTree = "<group>"; };
+		A24EB8801C3E5EB900888331 /* MKMarkdownOrderListHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownOrderListHighlighter.m; sourceTree = "<group>"; };
+		A24EB8811C3E5EB900888331 /* MKMarkdownStrikethroughHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownStrikethroughHighlighter.h; sourceTree = "<group>"; };
+		A24EB8821C3E5EB900888331 /* MKMarkdownStrikethroughHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownStrikethroughHighlighter.m; sourceTree = "<group>"; };
+		A24EB8831C3E5EB900888331 /* MKMarkdownStrongBlockHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownStrongBlockHighlighter.h; sourceTree = "<group>"; };
+		A24EB8841C3E5EB900888331 /* MKMarkdownStrongBlockHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownStrongBlockHighlighter.m; sourceTree = "<group>"; };
+		A24EB8851C3E5EB900888331 /* MKPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPreviewController.h; sourceTree = "<group>"; };
+		A24EB8861C3E5EB900888331 /* MKPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPreviewController.m; sourceTree = "<group>"; };
+		A24EB8871C3E5EB900888331 /* MKRegularExpressionHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRegularExpressionHighlighter.h; sourceTree = "<group>"; };
+		A24EB8881C3E5EB900888331 /* MKRegularExpressionHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRegularExpressionHighlighter.m; sourceTree = "<group>"; };
+		A24EB8891C3E5EB900888331 /* MKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTextView.h; sourceTree = "<group>"; };
+		A24EB88A1C3E5EB900888331 /* MKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTextView.m; sourceTree = "<group>"; };
+		A24EB89B1C3E613E00888331 /* TYZENMKPreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYZENMKPreView.h; path = TYZRNEditor/TYZENMKPreView.h; sourceTree = "<group>"; };
+		A24EB89C1C3E613E00888331 /* TYZENMKPreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZENMKPreView.m; path = TYZRNEditor/TYZENMKPreView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -749,6 +858,10 @@
 				A228DE721C3BA236008FB7C8 /* TYZRNEditorViewManager.m */,
 				A228DE881C3BB008008FB7C8 /* TYZRNEditorViewController.h */,
 				A228DE891C3BB008008FB7C8 /* TYZRNEditorViewController.m */,
+				A24EB85E1C3E5E2400888331 /* TYZRNMKEditor.h */,
+				A24EB85F1C3E5E2400888331 /* TYZRNMKEditor.m */,
+				A24EB89B1C3E613E00888331 /* TYZENMKPreView.h */,
+				A24EB89C1C3E613E00888331 /* TYZENMKPreView.m */,
 			);
 			name = TYZRNEditor;
 			sourceTree = "<group>";
@@ -818,6 +931,8 @@
 		A228DC6A1C3B9D17008FB7C8 /* OtherLib */ = {
 			isa = PBXGroup;
 			children = (
+				A24EB8321C3E5B8600888331 /* Moleskine */,
+				A24EB8171C3E5B3300888331 /* MMMarkdown */,
 				A228DD411C3B9F2D008FB7C8 /* WordPress-Editor-iOS-develop */,
 				A228DD361C3B9E52008FB7C8 /* content.html */,
 				A228DD371C3B9E52008FB7C8 /* WPEditorDemoLoggingConfiguration.h */,
@@ -1261,6 +1376,116 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		A24EB8171C3E5B3300888331 /* MMMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				A24EB8181C3E5B3300888331 /* Source */,
+			);
+			path = MMMarkdown;
+			sourceTree = "<group>";
+		};
+		A24EB8181C3E5B3300888331 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A24EB8191C3E5B3300888331 /* MMDocument.h */,
+				A24EB81A1C3E5B3300888331 /* MMDocument.m */,
+				A24EB81B1C3E5B3300888331 /* MMDocument_Private.h */,
+				A24EB81C1C3E5B3300888331 /* MMElement.h */,
+				A24EB81D1C3E5B3300888331 /* MMElement.m */,
+				A24EB81E1C3E5B3300888331 /* MMGenerator.h */,
+				A24EB81F1C3E5B3300888331 /* MMGenerator.m */,
+				A24EB8201C3E5B3300888331 /* MMHTMLParser.h */,
+				A24EB8211C3E5B3300888331 /* MMHTMLParser.m */,
+				A24EB8221C3E5B3300888331 /* MMMarkdown.h */,
+				A24EB8231C3E5B3300888331 /* MMMarkdown.m */,
+				A24EB8241C3E5B3300888331 /* MMParser.h */,
+				A24EB8251C3E5B3300888331 /* MMParser.m */,
+				A24EB8261C3E5B3300888331 /* MMScanner.h */,
+				A24EB8271C3E5B3300888331 /* MMScanner.m */,
+				A24EB8281C3E5B3300888331 /* MMSpanParser.h */,
+				A24EB8291C3E5B3300888331 /* MMSpanParser.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A24EB8321C3E5B8600888331 /* Moleskine */ = {
+			isa = PBXGroup;
+			children = (
+				A24EB8331C3E5B8600888331 /* Classes */,
+				A24EB8341C3E5B8600888331 /* Images */,
+				A24EB8411C3E5B8600888331 /* Resources */,
+			);
+			path = Moleskine;
+			sourceTree = "<group>";
+		};
+		A24EB8331C3E5B8600888331 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A24EB86B1C3E5EB900888331 /* MKHighlighterTextStorage.h */,
+				A24EB86C1C3E5EB900888331 /* MKHighlighterTextStorage.m */,
+				A24EB86D1C3E5EB900888331 /* MKHighlighterType.h */,
+				A24EB86E1C3E5EB900888331 /* MKHighlighterType.m */,
+				A24EB86F1C3E5EB900888331 /* MKKeyboardToolBar.h */,
+				A24EB8701C3E5EB900888331 /* MKKeyboardToolBar.m */,
+				A24EB8711C3E5EB900888331 /* MKMarkdownCodeBlockHighlighter.h */,
+				A24EB8721C3E5EB900888331 /* MKMarkdownCodeBlockHighlighter.m */,
+				A24EB8731C3E5EB900888331 /* MKMarkdownController.h */,
+				A24EB8741C3E5EB900888331 /* MKMarkdownController.m */,
+				A24EB8751C3E5EB900888331 /* MKMarkdownHeaderHighlighter.h */,
+				A24EB8761C3E5EB900888331 /* MKMarkdownHeaderHighlighter.m */,
+				A24EB8771C3E5EB900888331 /* MKMarkdownInlineBlockHighlighter.h */,
+				A24EB8781C3E5EB900888331 /* MKMarkdownInlineBlockHighlighter.m */,
+				A24EB8791C3E5EB900888331 /* MKMarkdownItalicHighlighter.h */,
+				A24EB87A1C3E5EB900888331 /* MKMarkdownItalicHighlighter.m */,
+				A24EB87B1C3E5EB900888331 /* MKMarkdownLinkHighlighter.h */,
+				A24EB87C1C3E5EB900888331 /* MKMarkdownLinkHighlighter.m */,
+				A24EB87D1C3E5EB900888331 /* MKMarkdownListHighlighter.h */,
+				A24EB87E1C3E5EB900888331 /* MKMarkdownListHighlighter.m */,
+				A24EB87F1C3E5EB900888331 /* MKMarkdownOrderListHighlighter.h */,
+				A24EB8801C3E5EB900888331 /* MKMarkdownOrderListHighlighter.m */,
+				A24EB8811C3E5EB900888331 /* MKMarkdownStrikethroughHighlighter.h */,
+				A24EB8821C3E5EB900888331 /* MKMarkdownStrikethroughHighlighter.m */,
+				A24EB8831C3E5EB900888331 /* MKMarkdownStrongBlockHighlighter.h */,
+				A24EB8841C3E5EB900888331 /* MKMarkdownStrongBlockHighlighter.m */,
+				A24EB8851C3E5EB900888331 /* MKPreviewController.h */,
+				A24EB8861C3E5EB900888331 /* MKPreviewController.m */,
+				A24EB8871C3E5EB900888331 /* MKRegularExpressionHighlighter.h */,
+				A24EB8881C3E5EB900888331 /* MKRegularExpressionHighlighter.m */,
+				A24EB8891C3E5EB900888331 /* MKTextView.h */,
+				A24EB88A1C3E5EB900888331 /* MKTextView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A24EB8341C3E5B8600888331 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A24EB8351C3E5B8600888331 /* bold.png */,
+				A24EB8361C3E5B8600888331 /* code.png */,
+				A24EB8371C3E5B8600888331 /* help.png */,
+				A24EB8381C3E5B8600888331 /* hr.png */,
+				A24EB8391C3E5B8600888331 /* img.png */,
+				A24EB83A1C3E5B8600888331 /* italic.png */,
+				A24EB83B1C3E5B8600888331 /* link.png */,
+				A24EB83C1C3E5B8600888331 /* more.png */,
+				A24EB83D1C3E5B8600888331 /* ol.png */,
+				A24EB83E1C3E5B8600888331 /* quote.png */,
+				A24EB83F1C3E5B8600888331 /* title.png */,
+				A24EB8401C3E5B8600888331 /* ul.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A24EB8411C3E5B8600888331 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A24EB8421C3E5B8600888331 /* markdown.css */,
+				A24EB8431C3E5B8600888331 /* markdown.html */,
+				A24EB8441C3E5B8600888331 /* syntax.md */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1485,7 +1710,9 @@
 			files = (
 				A228DE371C3B9F2D008FB7C8 /* ZSSh4.png in Resources */,
 				A228DDF51C3B9F2D008FB7C8 /* icon_format_html@3x.png in Resources */,
+				A24EB84C1C3E5B8600888331 /* more.png in Resources */,
 				A228DDF41C3B9F2D008FB7C8 /* icon_format_html@2x.png in Resources */,
+				A24EB8491C3E5B8600888331 /* img.png in Resources */,
 				A228DDEF1C3B9F2D008FB7C8 /* icon-posts-editor-preview@3x.png in Resources */,
 				A228DE511C3B9F2D008FB7C8 /* ZSStextcolor@2x.png in Resources */,
 				A228DE451C3B9F2D008FB7C8 /* ZSSquicklink.png in Resources */,
@@ -1501,6 +1728,7 @@
 				A228DE071C3B9F2D008FB7C8 /* icon_format_quote.png in Resources */,
 				A228DE521C3B9F2D008FB7C8 /* ZSSundo.png in Resources */,
 				A228DDFC1C3B9F2D008FB7C8 /* icon_format_link@2x.png in Resources */,
+				A24EB8511C3E5B8600888331 /* markdown.css in Resources */,
 				A228DE1A1C3B9F2D008FB7C8 /* js-beautifier.js in Resources */,
 				A228DE381C3B9F2D008FB7C8 /* ZSSh4@2x.png in Resources */,
 				A228DE491C3B9F2D008FB7C8 /* ZSSRichTextEditor.js in Resources */,
@@ -1509,8 +1737,10 @@
 				A228DE3E1C3B9F2D008FB7C8 /* ZSShorizontalrule@2x.png in Resources */,
 				A228DDEB1C3B9F2D008FB7C8 /* icon-posts-editor-inspector@2x.png in Resources */,
 				A228DE281C3B9F2D008FB7C8 /* wpsave.js in Resources */,
+				A24EB84D1C3E5B8600888331 /* ol.png in Resources */,
 				A228DE1E1C3B9F2D008FB7C8 /* rangy-selectionsaverestore.js in Resources */,
 				A228DD171C3B9D17008FB7C8 /* Merriweather-BoldItalic.ttf in Resources */,
+				A24EB8471C3E5B8600888331 /* help.png in Resources */,
 				A228DE471C3B9F2D008FB7C8 /* ZSSredo.png in Resources */,
 				A228DE4C1C3B9F2D008FB7C8 /* ZSSsubscript.png in Resources */,
 				A228DE361C3B9F2D008FB7C8 /* ZSSh3@2x.png in Resources */,
@@ -1539,7 +1769,9 @@
 				A228DD0F1C3B9D17008FB7C8 /* LICENSE.txt in Resources */,
 				A228DE261C3B9F2D008FB7C8 /* wpload.js in Resources */,
 				A228DD3D1C3B9E52008FB7C8 /* content.html in Resources */,
+				A24EB8461C3E5B8600888331 /* code.png in Resources */,
 				A228DE2A1C3B9F2D008FB7C8 /* ZSSbgcolor@2x.png in Resources */,
+				A24EB84F1C3E5B8600888331 /* title.png in Resources */,
 				A228DE4F1C3B9F2D008FB7C8 /* ZSSsuperscript@2x.png in Resources */,
 				A228DD191C3B9D17008FB7C8 /* Merriweather-Light.ttf in Resources */,
 				A228DE101C3B9F2D008FB7C8 /* icon_format_underline.png in Resources */,
@@ -1561,8 +1793,10 @@
 				A228DE171C3B9F2D008FB7C8 /* icon_preview@2x.png in Resources */,
 				A228DD201C3B9D17008FB7C8 /* OpenSans-LightItalic.ttf in Resources */,
 				A228DE4D1C3B9F2D008FB7C8 /* ZSSsubscript@2x.png in Resources */,
+				A24EB84B1C3E5B8600888331 /* link.png in Resources */,
 				A228DD1A1C3B9D17008FB7C8 /* Merriweather-LightItalic.ttf in Resources */,
 				A228DE431C3B9F2D008FB7C8 /* ZSSoutdent.png in Resources */,
+				A24EB8521C3E5B8600888331 /* markdown.html in Resources */,
 				A228DE3B1C3B9F2D008FB7C8 /* ZSSh6.png in Resources */,
 				A228DE141C3B9F2D008FB7C8 /* icon_options.png in Resources */,
 				A228DE3D1C3B9F2D008FB7C8 /* ZSShorizontalrule.png in Resources */,
@@ -1576,15 +1810,19 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A228DDFA1C3B9F2D008FB7C8 /* icon_format_keyboard@2x.png in Resources */,
 				A228DDEA1C3B9F2D008FB7C8 /* icon-posts-editor-inspector.png in Resources */,
+				A24EB8501C3E5B8600888331 /* ul.png in Resources */,
 				A228DE271C3B9F2D008FB7C8 /* wpposter.svg in Resources */,
 				A228DD221C3B9D17008FB7C8 /* OpenSans-Semibold.ttf in Resources */,
 				A228DE011C3B9F2D008FB7C8 /* icon_format_more.png in Resources */,
+				A24EB8481C3E5B8600888331 /* hr.png in Resources */,
+				A24EB84E1C3E5B8600888331 /* quote.png in Resources */,
 				A228DE3F1C3B9F2D008FB7C8 /* ZSSindent.png in Resources */,
 				A228DD1F1C3B9D17008FB7C8 /* OpenSans-Light.ttf in Resources */,
 				A228DE211C3B9F2D008FB7C8 /* shortcode.js in Resources */,
 				A228DE311C3B9F2D008FB7C8 /* ZSSh1.png in Resources */,
 				A228DE481C3B9F2D008FB7C8 /* ZSSredo@2x.png in Resources */,
 				A228DE191C3B9F2D008FB7C8 /* jquery.mobile-events.min.js in Resources */,
+				A24EB8451C3E5B8600888331 /* bold.png in Resources */,
 				A228DE181C3B9F2D008FB7C8 /* jquery.js in Resources */,
 				A228DDFB1C3B9F2D008FB7C8 /* icon_format_link.png in Resources */,
 				A228DE021C3B9F2D008FB7C8 /* icon_format_more@2x.png in Resources */,
@@ -1614,6 +1852,7 @@
 				A228DD111C3B9D17008FB7C8 /* LICENSE in Resources */,
 				A228DE0D1C3B9F2D008FB7C8 /* icon_format_ul.png in Resources */,
 				A228DE351C3B9F2D008FB7C8 /* ZSSh3.png in Resources */,
+				A24EB84A1C3E5B8600888331 /* italic.png in Resources */,
 				A228DE081C3B9F2D008FB7C8 /* icon_format_quote@2x.png in Resources */,
 				A228DE131C3B9F2D008FB7C8 /* icon_format_unlink@2x.png in Resources */,
 			);
@@ -1652,6 +1891,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A228DE5C1C3B9F2D008FB7C8 /* HRColorPickerViewController.m in Sources */,
+				A24EB8901C3E5EB900888331 /* MKMarkdownHeaderHighlighter.m in Sources */,
+				A24EB8601C3E5E2400888331 /* TYZRNMKEditor.m in Sources */,
 				A228DE701C3BA098008FB7C8 /* TYZRNEditorView.m in Sources */,
 				A228DE541C3B9F2D008FB7C8 /* CYRLayoutManager.m in Sources */,
 				A228DE8A1C3BB008008FB7C8 /* TYZRNEditorViewController.m in Sources */,
@@ -1668,10 +1909,14 @@
 				A228DE671C3B9F2D008FB7C8 /* WPLegacyKeyboardToolbarBase.m in Sources */,
 				A228DE621C3B9F2D008FB7C8 /* WPEditorToolbarButton.m in Sources */,
 				A228DD331C3B9D17008FB7C8 /* README.md in Sources */,
+				A24EB8301C3E5B3300888331 /* MMScanner.m in Sources */,
 				A228DE691C3B9F2D008FB7C8 /* WPLegacyKeyboardToolbarDone.m in Sources */,
+				A24EB8911C3E5EB900888331 /* MKMarkdownInlineBlockHighlighter.m in Sources */,
 				A228DD0E1C3B9D17008FB7C8 /* DDMultiFormatter.m in Sources */,
 				A228DE581C3B9F2D008FB7C8 /* HRBrightnessCursor.m in Sources */,
 				A228DD021C3B9D17008FB7C8 /* UIImageView+AFNetworking.m in Sources */,
+				A24EB8961C3E5EB900888331 /* MKMarkdownStrikethroughHighlighter.m in Sources */,
+				A24EB82E1C3E5B3300888331 /* MMMarkdown.m in Sources */,
 				A228DE5D1C3B9F2D008FB7C8 /* HRColorUtil.m in Sources */,
 				A228DD2D1C3B9D17008FB7C8 /* WPStyleGuide.m in Sources */,
 				A228DCF81C3B9D17008FB7C8 /* AFURLConnectionOperation.m in Sources */,
@@ -1679,8 +1924,13 @@
 				A228DE601C3B9F2D008FB7C8 /* WPEditorFormatbarView.m in Sources */,
 				A228DE681C3B9F2D008FB7C8 /* WPLegacyKeyboardToolbarButtonItem.m in Sources */,
 				A228DE641C3B9F2D008FB7C8 /* WPEditorViewController.m in Sources */,
+				A24EB82A1C3E5B3300888331 /* MMDocument.m in Sources */,
+				A24EB82C1C3E5B3300888331 /* MMGenerator.m in Sources */,
 				A228DD251C3B9D17008FB7C8 /* NSString+XMLExtensions.m in Sources */,
 				A228DE561C3B9F2D008FB7C8 /* CYRTextView.m in Sources */,
+				A24EB88E1C3E5EB900888331 /* MKMarkdownCodeBlockHighlighter.m in Sources */,
+				A24EB8921C3E5EB900888331 /* MKMarkdownItalicHighlighter.m in Sources */,
+				A24EB88F1C3E5EB900888331 /* MKMarkdownController.m in Sources */,
 				A228DD2F1C3B9D17008FB7C8 /* WPTableViewSectionHeaderFooterView.m in Sources */,
 				A228DD341C3B9D17008FB7C8 /* WPAnalytics.m in Sources */,
 				A228DCF71C3B9D17008FB7C8 /* AFSecurityPolicy.m in Sources */,
@@ -1688,24 +1938,36 @@
 				A228DD281C3B9D17008FB7C8 /* WPDeviceIdentification.m in Sources */,
 				A228DD031C3B9D17008FB7C8 /* UIProgressView+AFNetworking.m in Sources */,
 				A228DD151C3B9D17008FB7C8 /* README.md in Sources */,
+				A24EB8981C3E5EB900888331 /* MKPreviewController.m in Sources */,
+				A24EB82F1C3E5B3300888331 /* MMParser.m in Sources */,
 				A228DD081C3B9D17008FB7C8 /* DDASLLogger.m in Sources */,
+				A24EB8311C3E5B3300888331 /* MMSpanParser.m in Sources */,
 				A228DE631C3B9F2D008FB7C8 /* WPEditorView.m in Sources */,
 				A228DE6B1C3B9F2D008FB7C8 /* ZSSTextView.m in Sources */,
 				A228DE5F1C3B9F2D008FB7C8 /* WPEditorField.m in Sources */,
+				A24EB8531C3E5B8600888331 /* syntax.md in Sources */,
 				A228DE731C3BA236008FB7C8 /* TYZRNEditorViewManager.m in Sources */,
 				A228DCF31C3B9D17008FB7C8 /* AFHTTPRequestOperation.m in Sources */,
+				A24EB82B1C3E5B3300888331 /* MMElement.m in Sources */,
 				A228DCFB1C3B9D17008FB7C8 /* AFURLSessionManager.m in Sources */,
 				A228DD311C3B9D17008FB7C8 /* WPAnimatedImageResponseSerializer.m in Sources */,
 				A228DD101C3B9D17008FB7C8 /* README.md in Sources */,
 				A228DD0A1C3B9D17008FB7C8 /* DDLog.m in Sources */,
 				A228DCFA1C3B9D17008FB7C8 /* AFURLResponseSerialization.m in Sources */,
+				A24EB8951C3E5EB900888331 /* MKMarkdownOrderListHighlighter.m in Sources */,
+				A24EB8931C3E5EB900888331 /* MKMarkdownLinkHighlighter.m in Sources */,
+				A24EB8971C3E5EB900888331 /* MKMarkdownStrongBlockHighlighter.m in Sources */,
 				A228DD011C3B9D17008FB7C8 /* UIButton+AFNetworking.m in Sources */,
+				A24EB88B1C3E5EB900888331 /* MKHighlighterTextStorage.m in Sources */,
 				A228DE661C3B9F2D008FB7C8 /* WPLegacyEditorViewController.m in Sources */,
+				A24EB82D1C3E5B3300888331 /* MMHTMLParser.m in Sources */,
 				A228DCFF1C3B9D17008FB7C8 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				A228DD121C3B9D17008FB7C8 /* NSDictionary+SafeExpectations.m in Sources */,
 				A228DD291C3B9D17008FB7C8 /* WPFontManager.m in Sources */,
+				A24EB89A1C3E5EB900888331 /* MKTextView.m in Sources */,
 				A228DE5E1C3B9F2D008FB7C8 /* UIWebView+GUIFixes.m in Sources */,
 				A228DCFD1C3B9D17008FB7C8 /* README.md in Sources */,
+				A24EB88C1C3E5EB900888331 /* MKHighlighterType.m in Sources */,
 				A228DD061C3B9D17008FB7C8 /* DDAbstractDatabaseLogger.m in Sources */,
 				A228DD241C3B9D17008FB7C8 /* NSString+Util.m in Sources */,
 				A228DD301C3B9D17008FB7C8 /* WPTextFieldTableViewCell.m in Sources */,
@@ -1715,9 +1977,13 @@
 				A228DD131C3B9D17008FB7C8 /* README.md in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				A228DD3F1C3B9E52008FB7C8 /* WPImageMetaViewController.m in Sources */,
+				A24EB8941C3E5EB900888331 /* MKMarkdownListHighlighter.m in Sources */,
 				A228DD0B1C3B9D17008FB7C8 /* DDTTYLogger.m in Sources */,
+				A24EB8991C3E5EB900888331 /* MKRegularExpressionHighlighter.m in Sources */,
 				A228DD001C3B9D17008FB7C8 /* UIAlertView+AFNetworking.m in Sources */,
+				A24EB88D1C3E5EB900888331 /* MKKeyboardToolBar.m in Sources */,
 				A228DCF51C3B9D17008FB7C8 /* AFHTTPSessionManager.m in Sources */,
+				A24EB89D1C3E613E00888331 /* TYZENMKPreView.m in Sources */,
 				A228DD0D1C3B9D17008FB7C8 /* DDDispatchQueueLogFormatter.m in Sources */,
 				A228DD261C3B9D17008FB7C8 /* UIColor+Helpers.m in Sources */,
 				A228DD2E1C3B9D17008FB7C8 /* WPTableViewCell.m in Sources */,

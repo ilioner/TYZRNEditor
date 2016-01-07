@@ -1,7 +1,6 @@
 {
-  "name": "TYZRNEditor",
+  "name": "tyz_rn_editor",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "start": "react-native start"
   },
@@ -11,7 +10,7 @@
     "react-native-navigator": "^0.4.2",
     "react-native-rj-navigator": "^0.1.5"
   },
-  "main": "index.ios.js",
+  "main": "TYZRNEditor.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
@@ -22,7 +21,7 @@
     "Editor"
   ],
   "author": "TywinZhang",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ilioner/TYZRNEditor/issues"
   },

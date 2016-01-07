@@ -13,7 +13,7 @@ var {
   Navigator
 } = React;
 
-var TYZEditorViewComponent = require('./app/TYZEditorViewComponent');
+var TYZEditorViewComponent = require('./TYZEditorViewComponent');
 var TYZRNEditor = React.createClass({
 
   getInitialState: function() {

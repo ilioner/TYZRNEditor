@@ -1,0 +1,362 @@
+@charset "UTF-8";
+/*markdown 样式*/
+.webview-detail {
+    font-size: 0.875rem;
+    line-height: 23px;
+    overflow: hidden;
+    word-wrap: break-word;
+    color: #333;
+}
+.webview-detail .three_wrapper img.emotion.monkey {
+    width: 31%;
+    margin: 1%;
+}
+.webview-detail .two_wrapper img.emotion.monkey {
+    width: 46%;
+    margin: 2%;
+}
+.webview-detail > *:first-child {
+    margin-top: 0 !important;
+}
+.webview-detail > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+.webview-detail a{
+    color: #3bbd79;
+    text-decoration: none;
+}
+
+.webview-detail a.absent {
+    color: #c00;
+}
+.webview-detail a.anchor {
+    display: block;
+    padding-right: 6px;
+    padding-left: 30px;
+    margin-left: -30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.webview-detail a.anchor:focus {
+    outline: none;
+}
+.webview-detail h1, .webview-detail h2, .webview-detail h3, .webview-detail h4, .webview-detail h5, .webview-detail h6 {
+    margin: 1em 0 15px;
+    padding: 0;
+    cursor: text;
+    position: relative;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.webview-detail h1 .octicon-link, .webview-detail h2 .octicon-link, .webview-detail h3 .octicon-link, .webview-detail h4 .octicon-link, .webview-detail h5 .octicon-link, .webview-detail h6 .octicon-link {
+    display: none;
+    color: #000;
+}
+.webview-detail h1:hover a.anchor, .webview-detail h2:hover a.anchor, .webview-detail h3:hover a.anchor, .webview-detail h4:hover a.anchor, .webview-detail h5:hover a.anchor, .webview-detail h6:hover a.anchor {
+    text-decoration: none;
+    line-height: 1;
+    padding-left: 8px;
+    margin-left: -30px;
+    top: 15%;
+}
+.webview-detail h1:hover a.anchor .octicon-link, .webview-detail h2:hover a.anchor .octicon-link, .webview-detail h3:hover a.anchor .octicon-link, .webview-detail h4:hover a.anchor .octicon-link, .webview-detail h5:hover a.anchor .octicon-link, .webview-detail h6:hover a.anchor .octicon-link {
+    display: inline-block;
+}
+.webview-detail h1 tt, .webview-detail h1 code, .webview-detail h2 tt, .webview-detail h2 code, .webview-detail h3 tt, .webview-detail h3 code, .webview-detail h4 tt, .webview-detail h4 code, .webview-detail h5 tt, .webview-detail h5 code, .webview-detail h6 tt, .webview-detail h6 code {
+    font-size: inherit;
+}
+.webview-detail h1 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+}
+.webview-detail.bubble h1, .webview-detail.bubble h2 {
+    border: none !important;
+}
+.webview-detail h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+    font-weight: 400;
+}
+.webview-detail h3 {
+    font-size: 20px;
+}
+.webview-detail h4 {
+    font-size: 16px;
+}
+.webview-detail h5 {
+    font-size: 14px;
+    color: #666;
+}
+.webview-detail h6 {
+    font-size: 14px;
+}
+.webview-detail p, .webview-detail blockquote, .webview-detail ul, .webview-detail ol, .webview-detail dl, .webview-detail table, .webview-detail pre {
+    margin: 15px 0;
+}
+.webview-detail hr {
+    border: none;
+    border-top: 1px dashed #ddd;
+    height: 1px;
+    padding: 0;
+    margin: 30px 0;
+}
+.webview-detail ul, .webview-detail ol {
+    padding-left: 30px;
+}
+.webview-detail ul.no-list, .webview-detail ol.no-list {
+    list-style-type: none;
+    padding: 0;
+}
+.webview-detail ul ul, .webview-detail ul ol, .webview-detail ol ol, .webview-detail ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.webview-detail dl {
+    padding: 0;
+}
+.webview-detail dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin-top: 15px;
+}
+.webview-detail dl dd {
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.webview-detail blockquote {
+    border-left: 4px solid #DDD;
+    padding: 10px 15px;
+    color: #666;
+    background: rgba(0, 0, 0, 0.03);
+}
+.webview-detail blockquote > :first-child {
+    margin-top: 0px;
+}
+.webview-detail blockquote > :last-child {
+    margin-bottom: 0px;
+}
+.webview-detail table {
+    width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.webview-detail table th {
+    font-weight: bold;
+    background: #eee;
+}
+.webview-detail table th, .webview-detail table td {
+    border: 1px solid #ddd;
+    padding: 6px 13px;
+}
+.webview-detail table tr {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+.webview-detail table tr:nth-child(2n) {
+    background-color: #f6f6f6;
+}
+
+.webview-detail img {
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 8px;
+    margin: 0.25rem 0;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+.webview-detail img.emotion {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: none;
+}
+
+.webview-detail img.emotion.emoji {
+    height: 1.3em!important;
+    width: 1.3em!important;
+    vertical-align: middle;
+}
+
+.webview-detail img.emotion.monkey{
+    max-width: 44%;
+    margin: 2%;
+}
+
+.bubble-detial .one_wrapper img.emotion.monkey{
+    max-width: 100%;
+}
+
+.webview-detail .three_wrapper img.emotion.monkey,
+.webview-detail .two_wrapper img.emotion.monkey{
+    width: 46%;
+}
+
+.webview-detail span.frame {
+    display: block;
+    overflow: hidden;
+}
+.webview-detail span.frame > span {
+    border: 1px solid #ddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto;
+}
+.webview-detail span.frame span img {
+    display: block;
+    float: left;
+}
+.webview-detail span.frame span span {
+    clear: both;
+    color: #333;
+    display: block;
+    padding: 5px 0 0;
+}
+.webview-detail span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.webview-detail span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center;
+}
+.webview-detail span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+.webview-detail span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.webview-detail span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right;
+}
+.webview-detail span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+.webview-detail span.float-left {
+    display: block;
+    margin-right: 13px;
+    overflow: hidden;
+    float: left;
+}
+.webview-detail span.float-left span {
+    margin: 13px 0 0;
+}
+.webview-detail span.float-right {
+    display: block;
+    margin-left: 13px;
+    overflow: hidden;
+    float: right;
+}
+.webview-detail span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right;
+}
+.webview-detail code, .webview-detail tt {
+    margin: 0;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    max-width: 100%;
+    display: inline-block;
+    overflow: auto;
+    vertical-align: middle;
+    padding: 0;
+}
+.webview-detail code:before, .webview-detail code:after, .webview-detail tt:before, .webview-detail tt:after {
+    content: "\00a0";
+    letter-spacing: -0.2em;
+}
+.webview-detail del code {
+    text-decoration: inherit;
+    vertical-align: text-top;
+}
+.webview-detail code {
+    white-space: nowrap;
+}
+.webview-detail pre > code {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    border: none;
+    background: transparent;
+    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace !important;
+}
+.webview-detail .highlight pre, .webview-detail pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+.webview-detail pre {
+    word-wrap: normal;
+}
+.webview-detail pre code, .webview-detail pre tt {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    word-wrap: normal;
+    max-width: initial;
+    display: inline;
+    overflow: initial;
+    line-height: inherit;
+}
+.webview-detail pre code:before, .webview-detail pre code:after, .webview-detail pre tt:before, .webview-detail pre tt:after {
+    content: normal;
+}
+
+.webview-detail table tr {
+    font-size: 0.875rem;
+}
+
+.webview-detail h1{
+    line-height: 2rem;
+}
+
+.webview-detail h2{
+    line-height: 1.8rem;
+}
+
+.webview-detail h3{
+    line-height: 1.6rem;
+}
+
+.webview-detail h4{
+    line-height: 1.4rem;
+}
+
+.webview-detail h5{
+    line-height: 1.4rem;
+}

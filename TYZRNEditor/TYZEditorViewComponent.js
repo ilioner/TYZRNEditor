@@ -10,7 +10,7 @@ var {
 	TouchableOpacity
 } = React;
 
-var TYZRNEditorView = require('./component/TYZRNEditorView');
+var TYZRNEditorView = require('./TYZRNEditorView');
 
 var TYZEditorViewComponent = React.createClass({
 

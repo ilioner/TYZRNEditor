@@ -13,6 +13,7 @@
 
 #import "TYZRNEditorView.h"
 #import "TYZRNEditorViewController.h"
+#import "TYZRNMKEditor.h"
 
 @implementation AppDelegate
 
@@ -63,10 +64,17 @@
   [rnView setContentStr:@"<strong>Bold text</strong><em>Italic text</em><a href=\"http://www.wordpress.com\">I'm a link!</a>"];
   [rnView setTitleStr:@"标题"];
    **/
+  
+  TYZRNMKEditor *mkEditor = [[TYZRNMKEditor alloc] init];
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"syntax" ofType:@"md"];
+  NSString *content  = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+  
+  content = [content stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+  mkEditor.defaultMarkdownText = content;
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
-  rootViewController.view = rootView;
+  rootViewController.view = mkEditor;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
