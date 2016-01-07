@@ -57,6 +57,11 @@
   [self setBodyText:htmlStr];
 }
 
+- (void)insertTitle:(NSString *)htmlStr
+{
+  [self setTitleText:htmlStr];
+}
+
 #pragma mark - WPEditorViewControllerDelegate
 
 - (void)editorDidBeginEditing:(WPEditorViewController *)editorController
@@ -71,10 +76,13 @@
 
 - (void)editorDidFinishLoadingDOM:(WPEditorViewController *)editorController
 {
+  DDLogInfo(@"界面加载完成后修改内容");
   NSString *path = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"html"];
   NSString *htmlParam = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-  [self setTitleText:@"I'm editing a post!"];
-  [self setBodyText:htmlParam];
+//  [self setTitleText:@"I'm editing a post!"];
+//  [self setBodyText:htmlParam];
+  [self setTitleText:self.tltleString];
+  [self setBodyText:self.contentString];
 }
 
 - (BOOL)editorShouldDisplaySourceView:(WPEditorViewController *)editorController
@@ -446,7 +454,7 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-  
+  [self.editorDelegate editorViewController:self didEndSelectImage:YES];
   [picker dismissViewControllerAnimated:YES completion:^{
     NSURL *assetURL = info[UIImagePickerControllerReferenceURL];
     [self addAssetToContent:assetURL];

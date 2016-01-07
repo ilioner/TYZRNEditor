@@ -59,10 +59,12 @@
                                                    launchOptions:launchOptions];
   
   TYZRNEditorView *rnView = [[TYZRNEditorView alloc] init];
+  [rnView setContentStr:@"<strong>Bold text</strong><em>Italic text</em><a href=\"http://www.wordpress.com\">I'm a link!</a>"];
+  [rnView setTitleStr:@"标题"];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
-  rootViewController.view = rootView;
+  rootViewController.view = rnView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;

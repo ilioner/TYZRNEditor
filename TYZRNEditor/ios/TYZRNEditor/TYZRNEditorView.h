@@ -9,13 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "TYZRNEditorViewController.h"
 @protocol TYZRNEditorViewDelegate;
-@interface TYZRNEditorView : UIView
+@interface TYZRNEditorView : UIView<TYZRNEditorViewControllerDelegate>
 
 @property (nonatomic, weak) id<TYZRNEditorViewDelegate> delegate;
 
 @property (nonatomic, assign) BOOL                      isEditing;
-
-@property (nonatomic, strong) NSString                  *htmlContentStr;
 
 @property (nonatomic, strong) NSString                  *contentStr;
 

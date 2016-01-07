@@ -25,18 +25,6 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_VIEW_PROPERTY(contentStr, NSString);
 RCT_EXPORT_VIEW_PROPERTY(titleStr, NSString);
 
-RCT_EXPORT_METHOD(editingAction:(BOOL)isEditing)
-{
-  RCTLogInfo(@"%@",self.editorView);
-  dispatch_async(dispatch_get_main_queue(), ^{
-      if (isEditing == NO) {
-        [self stopEditing];
-      }else{
-        [self startEditing];
-      }
-  });
-}
-
 RCT_EXPORT_METHOD(getContentStrMethod:(RCTResponseSenderBlock)callback)
 {
   dispatch_async(dispatch_get_main_queue(), ^{
@@ -51,12 +39,6 @@ RCT_EXPORT_METHOD(getTitleStrMethod:(RCTResponseSenderBlock)callback)
   });
 }
 
-RCT_EXPORT_METHOD(insertHTML:(NSString *)html)
-{
-  dispatch_async(dispatch_get_main_queue(), ^{
-    [self insertNewHTML:html];
-  });
-}
 
 #pragma mark - TYZRNEditorViewDelegate
 
@@ -70,18 +52,10 @@ RCT_EXPORT_METHOD(insertHTML:(NSString *)html)
   [self.bridge.eventDispatcher sendInputEventWithName:@"topChange" body:event];
 }
 
-- (void)startEditing{
-  [self.editorView startEditing];
-}
-
-- (void)stopEditing{
-  [self.editorView stopEditing];
-}
-
 - (NSString *)getContentStr
 {
-  RCTLogInfo(@"%@",self.editorView.htmlContentStr);
-  return self.editorView.htmlContentStr;
+  RCTLogInfo(@"%@",self.editorView.contentStr);
+  return self.editorView.contentStr;
 }
 
 - (NSString *)getTitleStr
@@ -90,8 +64,4 @@ RCT_EXPORT_METHOD(insertHTML:(NSString *)html)
   return self.editorView.titleStr;
 }
 
-- (void)insertNewHTML:(NSString *)html
-{
-  [self.editorView insertHTML:html];
-}
 @end

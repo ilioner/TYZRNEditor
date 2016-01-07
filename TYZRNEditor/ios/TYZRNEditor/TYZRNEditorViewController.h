@@ -8,7 +8,17 @@
 
 #import "WPEditorViewController.h"
 
-@interface TYZRNEditorViewController : WPEditorViewController <WPEditorViewControllerDelegate>
+@protocol TYZRNEditorViewControllerDelegate;
 
+@interface TYZRNEditorViewController : WPEditorViewController <WPEditorViewControllerDelegate>
+@property (nonatomic, weak) id<TYZRNEditorViewControllerDelegate> editorDelegate;
+@property (nonatomic, strong) NSString *tltleString;
+@property (nonatomic, strong) NSString *contentString;
 - (void)insertHtml:(NSString *)htmlStr;
+@end
+
+@protocol TYZRNEditorViewControllerDelegate <NSObject>
+
+- (void)editorViewController:(TYZRNEditorViewController *)vc didEndSelectImage:(BOOL)flag;
+
 @end

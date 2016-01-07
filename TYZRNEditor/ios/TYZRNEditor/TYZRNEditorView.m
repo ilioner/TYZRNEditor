@@ -19,6 +19,7 @@
     //初始化编辑器
     self.contentViewController = [[TYZRNEditorViewController alloc] initWithMode:kWPEditorViewControllerModeEdit];
     self.contentViewController.view.frame = CGRectMake(0, 64, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
+    self.contentViewController.editorDelegate = self;
     [self addSubview:self.contentViewController.view];
     
     
@@ -57,13 +58,13 @@
   return self;
 }
 
+- (void)layoutSubviews
+{
+  self.navBarView.frame = CGRectMake(0, 0, SCREEN_W, 64);
+  self.contentViewController.view.frame = CGRectMake(0, 64, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
+}
 
 #pragma mark - getter & setter
-- (NSString *)htmlContentStr
-{
-  DDLogVerbose(@"%@",self.contentViewController.bodyText);
-  return self.contentViewController.bodyText;
-}
 
 - (NSString *)contentStr
 {
@@ -77,17 +78,17 @@
 
 - (void)setContentStr:(NSString *)contentStr
 {
-  self.contentViewController.bodyText = contentStr;
+  self.contentViewController.contentString = contentStr;
+}
+
+- (void)setTitleStr:(NSString *)titleStr
+{
+  self.contentViewController.tltleString = titleStr;
 }
 
 - (void)setTitleLabelStr:(NSString *)titleLabelStr
 {
   self.titleLabel.text = titleLabelStr;
-}
-
-- (void)insertHTML:(NSString *)htmlStr
-{
-  [self.contentViewController insertHtml:htmlStr];
 }
 
 - (void)leftButtonAction
@@ -121,6 +122,12 @@
   NSString *title = self.contentViewController.titleText;
   [self.delegate editorView:self title:title content:content];
   DDLogVerbose(@"源码:==============>\n%@",content);
+}
+
+#pragma mark - TYZRNEditorViewControllerDelegate
+- (void)editorViewController:(TYZRNEditorViewController *)vc didEndSelectImage:(BOOL)flag
+{
+  [self setNeedsLayout];
 }
 
 @end
