@@ -10,8 +10,7 @@ var {
   StyleSheet,
   Text,
   View,
-  Navigator,
-  TouchableOpacity
+  Navigator
 } = React;
 
 var TYZEditorViewComponent = require('./app/TYZEditorViewComponent');
@@ -24,18 +23,10 @@ var TYZRNEditor = React.createClass({
     };
   },
 
-  _onPressButton: function() {
-    TYZEditorViewComponent.mainContent.editingAction();
-  },
-
   render: function() {
     return (
       <View style={{ flex: 1, }}>
-      <TouchableOpacity onPress={this._onPressButton}>
-          <Text style={{ flex: 1, backgroundColor: '#F5FCFF',marginTop:100}} ref="textF">点我</Text>
-        </TouchableOpacity>
         <TYZEditorViewComponent/>
-        
     </View>
     );
   }

@@ -11,16 +11,8 @@ var {
 } = React;
 
 var TYZRNEditorView = require('./component/TYZRNEditorView');
-var TYZRNEditorViewManager = require('react-native').NativeModules.TYZRNEditorViewManager;
 
 var TYZEditorViewComponent = React.createClass({
-
-	getInitialState: function() {
-		return {
-			isEditing: true,
-			contentStr: null
-		};
-	},
 
 	render: function() {
 		//讲当前类映射为TYZEditorViewComponent.mainContent
@@ -30,34 +22,11 @@ var TYZEditorViewComponent = React.createClass({
 			<TYZRNEditorView style={styles.contentStyle} 
 							ref='EditorView' 
 							onRightButtonClicked={this.clickAction} 
-							contentStr = '哈哈哈哈'
+							contentStr = '这是一条初始化的测试内容'
+							titleStr = '这是一个标题'
 							/>
 		);
 	},
-
-	editingAction: function() {
-		console.log(this.refs.EditorView.state);
-		console.log(TYZRNEditorView.context.getContentString());
-		console.log(TYZRNEditorView.context.getTitleString());
-	},
-
-	//获取编辑器现有内容
-	getContent: function() {
-		TYZRNEditorViewManager.findEvents((error, events) => {
-			if (error) {
-				console.error(error);
-			} else {
-				alert(events);
-				console.log(events);
-				this.setState({
-					contentStr: events
-				});
-				//改变编辑器内容
-				var cont = "I'm a test post.<strong>Bold text</strong><em>Italic text</em><a href=\"http://www.wordpress.com\" > I 'm a link!</a>";
-				TYZRNEditorViewManager.insertHTML(cont);
-			}
-		});
-	}
 });
 
 
