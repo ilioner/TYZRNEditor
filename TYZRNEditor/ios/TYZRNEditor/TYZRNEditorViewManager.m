@@ -39,18 +39,7 @@ RCT_EXPORT_METHOD(getTitleStrMethod:(RCTResponseSenderBlock)callback)
   });
 }
 
-
-#pragma mark - TYZRNEditorViewDelegate
-
-- (void)editorView:(TYZRNEditorView *)editorView title:(NSString *)title content:(NSString *)content
-{
-  NSDictionary *event = @{
-                          @"target": @(100),
-                          @"tltle":title,
-                          @"content":content
-                          };
-  [self.bridge.eventDispatcher sendInputEventWithName:@"topChange" body:event];
-}
+#pragma mark - private method
 
 - (NSString *)getContentStr
 {
@@ -62,6 +51,16 @@ RCT_EXPORT_METHOD(getTitleStrMethod:(RCTResponseSenderBlock)callback)
 {
   RCTLogInfo(@"%@",self.editorView.titleStr);
   return self.editorView.titleStr;
+}
+
+#pragma mark - TYZRNEditorViewDelegate
+
+- (void)editorView:(TYZRNEditorView *)editorView title:(NSString *)title content:(NSString *)content
+{
+  NSDictionary *event = @{
+                            @"eventAction":@"eventAction"
+                          };
+  [self.bridge.eventDispatcher sendDeviceEventWithName:@"event" body:event];
 }
 
 @end

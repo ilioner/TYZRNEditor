@@ -50,7 +50,7 @@
     
     [self addSubview:self.navBarView];
     
-    self.rightButton.hidden = YES;
+//    self.rightButton.hidden = YES;
     
     self.isEditing = NO;
    

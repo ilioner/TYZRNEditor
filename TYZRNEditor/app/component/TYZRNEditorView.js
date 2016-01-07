@@ -1,7 +1,8 @@
 var React = require('react-native');
 var PropTypes = require('ReactPropTypes');
 var {
-	requireNativeComponent
+	requireNativeComponent,
+	DeviceEventEmitter
 } = React;
 
 var TYZRNEditorViewManager = React.NativeModules.TYZRNEditorViewManager;
@@ -13,11 +14,31 @@ var TYZRNEditorView = React.createClass({
 		titleStr: PropTypes.string,
 	},
 
+	componentWillMount: function() {
+		var subscription = DeviceEventEmitter.addListener(
+			'event', (info) => {
+				console.log('接受到一个事件');
+			}
+		);
+	},
+
+	componentWillUnmount: function() {
+		subscription.remove();
+	},
+
 	getInitialState: function() {
 		return {
 			contentStr: this.props.contentStr,
 			titleStr: this.props.string
 		};
+	},
+
+	render: function() {
+		TYZRNEditorView.context = this;
+		return ( < RCTMyEditorView {...this.props
+			}
+			/>
+		);
 	},
 
 	//获取编辑器内容
@@ -51,14 +72,6 @@ var TYZRNEditorView = React.createClass({
 				return events;
 			}
 		});
-	},
-
-	render: function() {
-		TYZRNEditorView.context = this;
-		return ( < RCTMyEditorView {...this.props
-			}
-			/>
-		);
 	}
 });
 

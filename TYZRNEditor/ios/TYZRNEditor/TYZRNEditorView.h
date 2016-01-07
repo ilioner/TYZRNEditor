@@ -33,7 +33,6 @@
 
 - (void)stopEditing;
 - (void)startEditing;
-- (void)insertHTML:(NSString *)htmlStr;
 @end
 
 
