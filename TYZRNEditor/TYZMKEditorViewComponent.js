@@ -15,6 +15,8 @@ var TYZMKEditorViewComponent = React.createClass({
 		this.props.navigator.pop();
 	},
 
+
+
 	render: function() {
 		//讲当前类映射为TYZEditorViewComponent.mainContent
 		TYZMKEditorViewComponent.mainContent = this;
