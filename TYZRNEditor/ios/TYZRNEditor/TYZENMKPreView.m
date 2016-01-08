@@ -22,6 +22,7 @@
   self = [super initWithFrame:frame];
   if (self) {
     _contentWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), SCREEN_H-64)];
+    _contentWebView.scrollView.bounces = NO;
     [self addSubview:_contentWebView];
     
   }

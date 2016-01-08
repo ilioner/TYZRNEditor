@@ -57,11 +57,15 @@
     self.textView.text = self.defaultMarkdownText;
     [self addSubview:_textView];
     
+    self.backgroundColor = [UIColor whiteColor];
     _isPreViewShow = NO;
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWasShown:)
                                                  name:UIKeyboardDidShowNotification
                                                object:nil];
+    self.isEditing = NO;
+    [self.textView resignFirstResponder];
+    self.textView.editable = NO;
   }
   return self;
 }
@@ -81,7 +85,17 @@
 
 - (void)leftButtonAction
 {
-  
+  if (!self.isEditing) {
+    [self.leftButton setTitle:@"取消" forState:UIControlStateNormal];
+    self.textView.editable = YES;
+    self.isEditing = YES;
+    [self.textView becomeFirstResponder];
+  }else{
+    self.isEditing = NO;
+    [self.leftButton setTitle:@"编辑" forState:UIControlStateNormal];
+    self.textView.editable = NO;
+    [self.textView resignFirstResponder];
+  }
 }
 
 - (void)rightButtonAction

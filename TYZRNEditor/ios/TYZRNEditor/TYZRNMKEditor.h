@@ -11,7 +11,9 @@
 
 @interface TYZRNMKEditor : UIView<UITextViewDelegate>
 
-@property (nonatomic, copy  ) NSString           *defaultMarkdownText;
+@property (nonatomic, assign) BOOL               isEditing;
+
+@property (nonatomic, strong) NSString           *defaultMarkdownText;
 
 @property (nonatomic, strong) MKTextView         *textView;
 
