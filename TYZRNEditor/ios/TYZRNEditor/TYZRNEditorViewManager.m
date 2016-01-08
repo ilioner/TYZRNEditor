@@ -58,7 +58,8 @@ RCT_EXPORT_METHOD(getTitleStrMethod:(RCTResponseSenderBlock)callback)
 - (void)editorView:(TYZRNEditorView *)editorView title:(NSString *)title content:(NSString *)content
 {
   NSDictionary *event = @{
-                            @"eventAction":@"eventAction"
+                            @"contentStr":editorView.contentStr,
+                            @"titleStr":editorView.titleStr
                           };
   [self.bridge.eventDispatcher sendDeviceEventWithName:@"event" body:event];
 }

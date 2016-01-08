@@ -27,9 +27,6 @@ var TYZEditorViewComponent = React.createClass({
 				styles.contentStyle
 			}
 			ref = 'EditorView'
-			onRightButtonClicked = {
-				this.clickAction
-			}
 			contentStr = '这是一条初始化的测试内容'
 			titleStr = '这是一个标题'
 			backAction = {

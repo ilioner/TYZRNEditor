@@ -20,8 +20,11 @@ var TYZRNEditorView = React.createClass({
 	componentWillMount: function() {
 		subscription = DeviceEventEmitter.addListener(
 			'event', (info) => {
-				console.log('接受到一个事件');
-				alert('接收到一个事件' + info);
+				console.log('接受到一个事件' + info);
+				this.setState({
+					contentStr: info.contentStr,
+					titleStr: info.titleStr,
+				});
 			}
 		);
 
