@@ -28,7 +28,7 @@
     self.navBarView.backgroundColor = [UIColor redColor];
     
     self.leftButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 21, 80, 40)];
-    [self.leftButton setTitle:@"编辑" forState:UIControlStateNormal];
+    [self.leftButton setTitle:@"返回" forState:UIControlStateNormal];
     [self.leftButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.leftButton addTarget:self action:@selector(leftButtonAction) forControlEvents:UIControlEventTouchUpInside];
     
@@ -63,9 +63,9 @@
                                              selector:@selector(keyboardWasShown:)
                                                  name:UIKeyboardDidShowNotification
                                                object:nil];
-    self.isEditing = NO;
-    [self.textView resignFirstResponder];
-    self.textView.editable = NO;
+//    self.isEditing = NO;
+//    [self.textView resignFirstResponder];
+//    self.textView.editable = NO;
   }
   return self;
 }
@@ -85,6 +85,7 @@
 
 - (void)leftButtonAction
 {
+  /*
   if (!self.isEditing) {
     [self.leftButton setTitle:@"取消" forState:UIControlStateNormal];
     self.textView.editable = YES;
@@ -95,7 +96,9 @@
     [self.leftButton setTitle:@"编辑" forState:UIControlStateNormal];
     self.textView.editable = NO;
     [self.textView resignFirstResponder];
-  }
+  }*/
+  
+  [self.markdownDelegate markdownView:self willGoBack:YES];
 }
 
 - (void)rightButtonAction
@@ -120,6 +123,12 @@
     [self addSubview:_preView];
     
   }
+}
+
+- (void)setDefaultMarkdownText:(NSString *)defaultMarkdownText
+{
+  self.textView.text = defaultMarkdownText;
+  _defaultMarkdownText = defaultMarkdownText;
 }
 
 #pragma mark - UITextViewDelegate

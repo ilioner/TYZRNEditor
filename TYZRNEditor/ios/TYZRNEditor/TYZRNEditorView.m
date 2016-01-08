@@ -28,7 +28,7 @@
     self.navBarView.backgroundColor = [UIColor redColor];
     
     self.leftButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 21, 80, 40)];
-    [self.leftButton setTitle:@"编辑" forState:UIControlStateNormal];
+    [self.leftButton setTitle:@"返回" forState:UIControlStateNormal];
     [self.leftButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.leftButton addTarget:self action:@selector(leftButtonAction) forControlEvents:UIControlEventTouchUpInside];
     
@@ -93,6 +93,7 @@
 
 - (void)leftButtonAction
 {
+  /*
   if (!self.isEditing) {
     self.isEditing = YES;
     [self startEditing];
@@ -101,7 +102,8 @@
     self.isEditing = NO;
     [self stopEditing];
     [self.leftButton setTitle:@"编辑" forState:UIControlStateNormal];
-  }
+  }*/
+  [self.delegate editorView:self willGoBack:YES];
 }
 
 #pragma mark - public method

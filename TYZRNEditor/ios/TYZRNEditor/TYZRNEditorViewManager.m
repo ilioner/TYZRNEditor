@@ -63,4 +63,12 @@ RCT_EXPORT_METHOD(getTitleStrMethod:(RCTResponseSenderBlock)callback)
   [self.bridge.eventDispatcher sendDeviceEventWithName:@"event" body:event];
 }
 
+- (void)editorView:(TYZRNEditorView *)editorView willGoBack:(BOOL)back
+{
+  NSDictionary *event = @{
+                          @"eventAction":@"eventAction"
+                          };
+  [self.bridge.eventDispatcher sendDeviceEventWithName:@"backEvent" body:event];
+}
+
 @end

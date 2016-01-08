@@ -39,5 +39,6 @@
 @protocol TYZRNEditorViewDelegate <NSObject>
 
 - (void)editorView:(TYZRNEditorView *)editorView title:(NSString *)title content:(NSString *)content;
+- (void)editorView:(TYZRNEditorView *)editorView willGoBack:(BOOL)back;
 
 @end

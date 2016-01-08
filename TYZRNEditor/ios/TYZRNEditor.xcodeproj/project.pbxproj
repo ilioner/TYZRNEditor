@@ -271,6 +271,7 @@
 		A24EB8991C3E5EB900888331 /* MKRegularExpressionHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB8881C3E5EB900888331 /* MKRegularExpressionHighlighter.m */; };
 		A24EB89A1C3E5EB900888331 /* MKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB88A1C3E5EB900888331 /* MKTextView.m */; };
 		A24EB89D1C3E613E00888331 /* TYZENMKPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EB89C1C3E613E00888331 /* TYZENMKPreView.m */; };
+		A2F7F4241C3F4708004437C4 /* TYZRNMKEditorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F7F4231C3F4708004437C4 /* TYZRNMKEditorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -737,6 +738,8 @@
 		A24EB88A1C3E5EB900888331 /* MKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTextView.m; sourceTree = "<group>"; };
 		A24EB89B1C3E613E00888331 /* TYZENMKPreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYZENMKPreView.h; path = TYZRNEditor/TYZENMKPreView.h; sourceTree = "<group>"; };
 		A24EB89C1C3E613E00888331 /* TYZENMKPreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZENMKPreView.m; path = TYZRNEditor/TYZENMKPreView.m; sourceTree = "<group>"; };
+		A2F7F4221C3F4708004437C4 /* TYZRNMKEditorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYZRNMKEditorManager.h; path = TYZRNEditor/TYZRNMKEditorManager.h; sourceTree = "<group>"; };
+		A2F7F4231C3F4708004437C4 /* TYZRNMKEditorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYZRNMKEditorManager.m; path = TYZRNEditor/TYZRNMKEditorManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -862,6 +865,8 @@
 				A24EB85F1C3E5E2400888331 /* TYZRNMKEditor.m */,
 				A24EB89B1C3E613E00888331 /* TYZENMKPreView.h */,
 				A24EB89C1C3E613E00888331 /* TYZENMKPreView.m */,
+				A2F7F4221C3F4708004437C4 /* TYZRNMKEditorManager.h */,
+				A2F7F4231C3F4708004437C4 /* TYZRNMKEditorManager.m */,
 			);
 			name = TYZRNEditor;
 			sourceTree = "<group>";
@@ -1929,6 +1934,7 @@
 				A228DD251C3B9D17008FB7C8 /* NSString+XMLExtensions.m in Sources */,
 				A228DE561C3B9F2D008FB7C8 /* CYRTextView.m in Sources */,
 				A24EB88E1C3E5EB900888331 /* MKMarkdownCodeBlockHighlighter.m in Sources */,
+				A2F7F4241C3F4708004437C4 /* TYZRNMKEditorManager.m in Sources */,
 				A24EB8921C3E5EB900888331 /* MKMarkdownItalicHighlighter.m in Sources */,
 				A24EB88F1C3E5EB900888331 /* MKMarkdownController.m in Sources */,
 				A228DD2F1C3B9D17008FB7C8 /* WPTableViewSectionHeaderFooterView.m in Sources */,
